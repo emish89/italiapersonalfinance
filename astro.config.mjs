@@ -5,7 +5,6 @@ import UnoCSS from 'unocss/astro';
 export default defineConfig({
   // used to generate images
   site: 'https://emish89.github.io',
-  base: '/italiapersonalfinance',
   trailingSlash: 'ignore',
   integrations: [sitemap(), UnoCSS({ injectReset: true })],
   experimental: {
