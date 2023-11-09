@@ -6,10 +6,10 @@ export default defineConfig({
   // used to generate images
   site:
     process.env.VERCEL_ENV === 'production'
-      ? 'https://brutal.elian.codes/'
+      ? 'TODO'
       : process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}/`
-      : 'https://localhost:3000/',
+        ? `https://${process.env.VERCEL_URL}/`
+        : 'https://localhost:3000/',
   trailingSlash: 'ignore',
   integrations: [sitemap(), UnoCSS({ injectReset: true })],
   experimental: {

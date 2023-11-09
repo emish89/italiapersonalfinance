@@ -25,28 +25,23 @@ const builtWith = [
 
 <Layout
   title='Home'
-  pageTitle='Brutal Theme | Home'
-  description='Brutal is a minimalistic, neobrutalism theme for Astro.'
+  pageTitle='Italia Personal Finance | Home'
+  description='Wiki page di Italia Personal Finance | Italia Personal Finance è una community di persone che condividono la passione per la finanza personale e l’investimento.'
 >
   <main class='bg-pink p-6'>
     <MobileSocials />
     <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
-      <h2 class='hidden'>About Brutal</h2>
       <div class='col-span-4'>
         <Card>
           <div class='flex flex-col justify-between items-start gap-4'>
             <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
-              Brutal theme for <a
-                class='text-white'
-                target='_blank'
-                href='https://astro.build/'>Astro</a
-              >
+              Italia Personal Finance
             </p>
             <p class='mt-2 outfit text-xl md:text-3xl lg:text-5xl'>
-              A minimalistic, neobrutalism theme for Astro.
+              Il sito della community Reddit di personal finance più famosa d'Italia
             </p>
-            <Button target={'_self'} href='/blog/'>
-              Check out the blog &rarr;
+            <Button target={'_self'} href='https://www.reddit.com/r/ItaliaPersonalFinance/'>
+              Scopri su Reddit
             </Button>
           </div>
         </Card>
@@ -54,7 +49,7 @@ const builtWith = [
       <div class='col-span-2'>
         <Card>
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
-            Brutal is built with
+            Italia Personal Finance parla di 
           </h2>
           <ul class='flex gap-4 flex-wrap'>
             {
@@ -79,14 +74,14 @@ const builtWith = [
       <div class='col-span-2'>
         <Card>
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
-            What is Brutal?
+            La Wiki di IPF
           </h2>
           <p class='poppins'>
-            Brutal is a theme built with Astro, UnoCSS by <a
-              href='https://www.elian.codes/'>Elian</a
-            >. It's a simple, fast, and modern theme that is easy to use and
-            customize. Mainly meant to power blogs and personal websites.
+            La pagina Wiki di Italia Personal Finance contiene il materiale base per iniziare ad approcciare la finanza personale e l'investimento.
           </p>
+          <Button target={'_self'} href='/blog/'>
+              Vai alla Wiki
+            </Button>
         </Card>
       </div>
     </section>

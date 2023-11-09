@@ -1,15 +1,14 @@
 {
-  "name": "brutal",
+  "name": "italia_personal_finance",
   "version": "1.2.0",
   "private": false,
   "type": "module",
   "packageManager": "pnpm@8.6.0",
   "author": {
-    "name": "Elian Van Cutsem",
-    "email": "hello@elian.codes",
-    "url": "https://www.elian.codes/"
+    "name": "emish89",
+    "url": "TODO"
   },
-  "homepage": "https://brutal.elian.codes",
+  "homepage": "TODO",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

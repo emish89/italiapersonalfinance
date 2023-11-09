@@ -1,10 +1,9 @@
 ---
 name: Feature request
-about: Suggest an idea to Brutal
-title: ''
+about: Suggest an idea to TODO
+title: ""
 labels: enhancement
-assignees: ElianCodes
-
+assignees: emish89
 ---
 
 **Is your feature request related to a problem? Please describe.**

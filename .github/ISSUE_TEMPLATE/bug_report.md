@@ -1,10 +1,9 @@
 ---
 name: Bug report
-about: Create a report to help improve Brutal
-title: ''
+about: Create a report to help improve TODO
+title: ""
 labels: bug
-assignees: ElianCodes
-
+assignees: emish89
 ---
 
 **Describe the bug**
