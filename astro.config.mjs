@@ -4,12 +4,8 @@ import UnoCSS from 'unocss/astro';
 
 export default defineConfig({
   // used to generate images
-  site:
-    process.env.VERCEL_ENV === 'production'
-      ? 'TODO'
-      : process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}/`
-        : 'https://localhost:3000/',
+  site: 'https://emish89.github.io',
+  base: '/italiapersonalfinance',
   trailingSlash: 'ignore',
   integrations: [sitemap(), UnoCSS({ injectReset: true })],
   experimental: {
