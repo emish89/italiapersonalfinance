@@ -16,11 +16,18 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^1.1.4",
+    "@astrojs/react": "^3.0.4",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.3",
     "@eliancodes/brutal-ui": "^0.2.2",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
     "@unocss/astro": "^0.57.3",
     "astro": "^3.5.0",
+    "fuse.js": "^7.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "satori": "^0.10.9",
     "satori-html": "^0.3.2"
   },

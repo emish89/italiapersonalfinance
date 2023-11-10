@@ -4,16 +4,19 @@ const socials = [
     name: 'GitHub',
     url: 'https://github.com/emish89/italiapersonalfinance',
     icon: 'i-uil-github',
+    target: '_blank',
   },
   {
     name: 'Reddit',
     url: 'https://www.reddit.com/r/ItaliaPersonalFinance/',
     icon: 'i-uil-reddit-alien-alt',
+    target: '_blank',
   },
   {
-    name: 'LinkedIn',
-    url: 'TODO',
-    icon: 'i-uil-linkedin',
+    name: 'Search',
+    url: '/search',
+    icon: 'i-uil-search',
+    target: '_self',
   },
 ];
 ---
@@ -24,7 +27,7 @@ const socials = [
     {
       socials.map((item) => (
         <li class='bg-white px-4 py-2 text-green border-black border-2 rounded card-shadow'>
-          <a href={item.url} target='_blank' title={`Go to ${item.name}`}>
+          <a href={item.url} target={item.target} title={`Go to ${item.name}`}>
             <div class:list={[item.icon, 'p-6']} />
           </a>
         </li>

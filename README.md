@@ -4,7 +4,7 @@ Brutal is a minimal neobrutalist theme for [Astro](https://astro.build/). It's b
 
 The theme has no JavaScript integration out of the box, but can always be added of course.
 
-This template is based on [my own personal website](<https://www.elian.codes/>), with some more generic things added.
+This template is based on [my own personal website](https://www.elian.codes/), with some more generic things added.
 
 ## Usage
 
@@ -41,7 +41,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## Integrations
 
-### UnoCSS
+###
 
 In this theme, I'm using [UnoCSS](https://uno.antfu.me/) to generate the CSS. It's a utility-first CSS framework that uses a single class to style elements. It's very easy to use and has a lot of features. It's setup to be completely compatible with TailwindCSS, with the advantage of being able to use PureCSS icons. You can always switch out UnoCSS for TailwindCSS if you want to, without breaking the general styles.
 
@@ -50,10 +50,10 @@ In this theme, I'm using [UnoCSS](https://uno.antfu.me/) to generate the CSS. It
 To generate the sitemap, you don't need to do anything. It's automatically generated when you build your site. You'll just need to switch out the `site` on `astro.config.mjs` to your own.
 
 ```js title="astro.config.mjs"
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: 'https://example.com',
+  site: "https://example.com",
 });
 ```
 
