@@ -49,24 +49,26 @@ function Search({ searchList }) {
 
       {query.length > 1 && (
         <div className="my-4">
-          Found {posts.length} {posts.length === 1 ? "result" : "results"} for '
-          {query}'
+          {posts.length === 1 ? "Trovato" : "Trovati"} {posts.length}{" "}
+          {posts.length === 1 ? "risultato" : "risultati"} per '{query}'
         </div>
       )}
 
       <ul className="list-none">
         {posts &&
           posts.map((post) => (
-            <li className="py-2" key={post?.frontmatter.slug}>
-              <a
-                className="text-lg text-blue-700 hover:text-blue-900 hover:underline underline-offset-2"
-                href={`/blog/${post.frontmatter.slug}`}
-              >
-                {post.frontmatter.title}
+            <li
+              className="py-2 brutal-card poppins"
+              key={post?.frontmatter.slug}
+            >
+              <a href={`/blog/${post.frontmatter.slug}`}>
+                <p className="text-lg md:text-xl hover:underline underline-offset-2">
+                  {post.frontmatter.title}
+                </p>
+                <p className="text-sm text-gray-800">
+                  {post.frontmatter.description}
+                </p>
               </a>
-              <p className="text-sm text-gray-800">
-                {post.frontmatter.description}
-              </p>
             </li>
           ))}
       </ul>

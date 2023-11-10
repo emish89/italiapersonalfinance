@@ -9,17 +9,27 @@ const navigationItems = [
 ];
 
 const socialIcons = [
+  { 
+    name: 'Search', 
+    url: '/search',
+    icon: 'i-uil-search',
+    target: '_self',
+    desktopOnly: false,
+  },
   {
     name: 'GitHub',
     url: 'https://github.com/emish89/italiapersonalfinance',
     icon: 'i-uil-github',
+    target: '_blank',
+    desktopOnly: true,
   },
   {
     name: 'Reddit',
     url: 'https://www.reddit.com/r/ItaliaPersonalFinance/',
     icon: 'i-uil-reddit-alien-alt',
+    target: '_blank',
+    desktopOnly: true,
   },
-  { name: 'Search', url: '/search', icon: 'i-uil-search' },
 ];
 
 const { pageTitle } = Astro.props;
@@ -30,7 +40,7 @@ const { pageTitle } = Astro.props;
   <a href='/' title='Back to Home'>
     <p class='righteous md:text-5xl'>Italia Personal Finance</p>
   </a>
-  <nav class='hidden md:inline-block'>
+  <nav class='inline-block'>
     <h2 class='hidden'>Navigation</h2>
     <ul class='flex gap-8 poppins'>
       {
@@ -48,11 +58,11 @@ const { pageTitle } = Astro.props;
       }
       {
         socialIcons.map((item) => (
-          <li>
+          <li class={item.desktopOnly? 'hidden md:inline-block': 'inline-block'}>
             <a
               href={item.url}
               class='hover:text-green hover:underline transition-all duration-150 ease-in-out'
-              target='_blank'
+              target={item.target}
               title={`'See @TODO on ${item.name}`}
             >
               <div class:list={[item.icon, 'w-6 h-6']} />
@@ -60,12 +70,6 @@ const { pageTitle } = Astro.props;
           </li>
         ))
       }
-    </ul>
-  </nav>
-  <nav class='md:hidden flex'>
-    <h2 class='hidden'>Mobile Navigation</h2>
-    <ul>
-      <li><a href='/blog/'>Blog</a></li>
     </ul>
   </nav>
 </header>
