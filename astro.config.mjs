@@ -4,6 +4,7 @@ import UnoCSS from 'unocss/astro';
 import mdx from "@astrojs/mdx";
 import partytown from "@astrojs/partytown";
 import { remarkModifiedTime } from './remark-modified-time.mjs';
+import { remarkReadingTime } from './remark-reading-time.mjs';
 
 import react from "@astrojs/react";
 
@@ -31,6 +32,6 @@ export default defineConfig({
     }
   },
   markdown: {
-    remarkPlugins: [remarkModifiedTime],
+    remarkPlugins: [remarkModifiedTime, remarkReadingTime],
   },
 });

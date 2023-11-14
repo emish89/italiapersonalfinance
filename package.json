@@ -27,8 +27,10 @@
     "@unocss/astro": "^0.57.4",
     "astro": "^3.5.4",
     "fuse.js": "^7.0.0",
+    "mdast-util-to-string": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "reading-time": "^1.5.0",
     "satori": "^0.10.9",
     "satori-html": "^0.3.2"
   },
