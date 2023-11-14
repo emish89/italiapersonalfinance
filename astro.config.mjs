@@ -3,6 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import UnoCSS from 'unocss/astro';
 import mdx from "@astrojs/mdx";
 import partytown from "@astrojs/partytown";
+import { remarkModifiedTime } from './remark-modified-time.mjs';
 
 import react from "@astrojs/react";
 
@@ -28,5 +29,8 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ['@resvg/resvg-js']
     }
-  }
+  },
+  markdown: {
+    remarkPlugins: [remarkModifiedTime],
+  },
 });

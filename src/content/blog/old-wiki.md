@@ -1,6 +1,6 @@
 ---
 title: Wiki attuale
-pubDate: 14 Nov 2023 16:32
+pubDate: 14/11/23, 17:42
 author: "Federico Ballarini"
 tags:
   - Wiki

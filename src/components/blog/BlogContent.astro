@@ -4,14 +4,16 @@ interface Props {
 }
 
 const { content } = Astro.props;
+const timeFormat: Intl.DateTimeFormatOptions = { year: '2-digit', month: 'numeric', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Rome' }
+const lastModifiedDate = new Date(content.lastModified).toLocaleString("it", timeFormat);
 ---
 
 <article class='prose-slate w-sm md:w-prose md:prose poppins'>
   <a href='/blog/' title='Back to blog'>&larr; Torna al blog</a>
   <p class='text-slate text-sm md:text-base'>
-    Pubblicato il {content.pubDate} by {content.author}
+    Ultimo aggiornamento il {lastModifiedDate} - Scritto da {content.author}
   </p>
   <slot />
-  <p class='text-slate'>Scritto da {content.author}</p>
+  <p class='text-slate'>Scritto da {content.author} - Originariamente pubblicato il {content.pubDate} e aggiornato l'ultima volta il {lastModifiedDate}</p>
   <a href='/blog/' title='Back to blog'>&larr; Torna al blog</a>
 </article>
