@@ -2,6 +2,7 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import UnoCSS from 'unocss/astro';
 import mdx from "@astrojs/mdx";
+import partytown from "@astrojs/partytown";
 
 import react from "@astrojs/react";
 
@@ -12,7 +13,14 @@ export default defineConfig({
   trailingSlash: 'ignore',
   integrations: [sitemap(), UnoCSS({
     injectReset: true
-  }), mdx(), react()],
+  }), mdx(), react(),
+  partytown({
+    // Adds dataLayer.push as a forwarding-event.
+    config: {
+      forward: ["dataLayer.push"],
+    },
+  }),
+  ],
   experimental: {
     devOverlay: true
   },
