@@ -1,13 +1,13 @@
 {
   "name": "italia_personal_finance",
-  "version": "1.2.0",
+  "version": "0.1.0",
   "private": false,
   "type": "module",
   "author": {
     "name": "emish89",
-    "url": "TODO"
+    "url": "https://github.com/emish89"
   },
-  "homepage": "TODO",
+  "homepage": "https://italia-personal-finance.netlify.app/",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -16,7 +16,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^1.1.4",
+    "@astrojs/mdx": "^1.1.5",
     "@astrojs/partytown": "^2.0.2",
     "@astrojs/react": "^3.0.4",
     "@astrojs/rss": "^3.0.0",
@@ -24,8 +24,8 @@
     "@eliancodes/brutal-ui": "^0.2.2",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
-    "@unocss/astro": "^0.57.3",
-    "astro": "^3.5.3",
+    "@unocss/astro": "^0.57.4",
+    "astro": "^3.5.4",
     "fuse.js": "^7.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -37,13 +37,13 @@
     "@iconify-json/uil": "^1.1.5",
     "@resvg/resvg-js": "^2.6.0",
     "@typescript-eslint/parser": "^6.11.0",
-    "@unocss/reset": "^0.57.3",
+    "@unocss/reset": "^0.57.4",
     "eslint": "^8.53.0",
     "eslint-plugin-astro": "^0.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "prettier": "^3.1.0",
     "prettier-plugin-astro": "^0.12.2",
     "sharp": "^0.32.6",
-    "unocss": "^0.57.3"
+    "unocss": "^0.57.4"
   }
 }
