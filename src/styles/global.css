@@ -3,38 +3,38 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "DM Serif Text";
+  font-family: 'DM Serif Text';
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/dm-serif.ttf") format("truetype");
+  src: url('/fonts/dm-serif.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Outfit";
+  font-family: 'Outfit';
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/outfit.ttf") format("truetype");
+  src: url('/fonts/outfit.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/poppins.ttf") format("truetype");
+  src: url('/fonts/poppins.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Righteous";
+  font-family: 'Righteous';
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/righteous.ttf") format("truetype");
+  src: url('/fonts/righteous.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Sanchez";
+  font-family: 'Sanchez';
   font-style: normal;
   font-display: swap;
-  src: url("/fonts/sanchez.ttf") format("truetype");
+  src: url('/fonts/sanchez.ttf') format('truetype');
 }
 
 .outfit {
@@ -66,16 +66,15 @@
 }
 
 body {
-  --sb-track-color: #232E33;
+  --sb-track-color: #232e33;
   --sb-thumb-color: #0d1117;
   --sb-size: 0.5em;
 
-  scrollbar-color: var(--sb-thumb-color) 
-                   var(--sb-track-color);
+  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
 }
 
 body::-webkit-scrollbar {
-  width: var(--sb-size) 
+  width: var(--sb-size);
 }
 
 body::-webkit-scrollbar-track {
@@ -83,8 +82,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--sb-thumb-color);  
-  }
+  background: var(--sb-thumb-color);
+}
 
 html {
   scroll-behavior: smooth;

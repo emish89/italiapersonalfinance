@@ -7,7 +7,7 @@ tags:
   - CSS
   - Astro
   - Vite
-imgUrl: "../../assets/astro.jpeg"
+imgUrl: '../../assets/astro.jpeg'
 layout: ../../layouts/BlogPost.astro
 slug: blog3
 ---

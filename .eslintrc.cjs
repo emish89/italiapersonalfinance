@@ -18,6 +18,8 @@ module.exports = {
             rules: {
                 // override/add rules settings here, such as:
                 // "astro/no-set-html-directive": "error"
+                "quotes": [2, "single", { "avoidEscape": true }],
+                "jsx-quotes": [2, "prefer-single"]
             }
         }
     ]

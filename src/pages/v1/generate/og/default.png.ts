@@ -1,10 +1,10 @@
-import { Resvg, type ResvgRenderOptions } from "@resvg/resvg-js";
-import type { APIRoute } from "astro";
-import satori from "satori";
-import { html as toReactElement } from "satori-html";
+import { Resvg, type ResvgRenderOptions } from '@resvg/resvg-js';
+import type { APIRoute } from 'astro';
+import satori from 'satori';
+import { html as toReactElement } from 'satori-html';
 
 const fontFile = await fetch(
-  "https://og-playground.vercel.app/inter-latin-ext-700-normal.woff"
+  'https://og-playground.vercel.app/inter-latin-ext-700-normal.woff'
 );
 
 const fontData: ArrayBuffer = await fontFile.arrayBuffer();
@@ -13,7 +13,7 @@ const height = 630;
 const width = 1200;
 
 export const GET: APIRoute = async () => {
-  const link = "https://brutal.elian.codes"; //TODO
+  const link = 'https://brutal.elian.codes'; //TODO
   const html = toReactElement(`
   <div style="background-color: white; display: flex; flex-direction: column; height: 100%; padding: 3rem; width: 100%">
     <div style="display:flex; height: 100%; width: 100%; background-color: white; border: 6px solid black; border-radius: 0.5rem; padding: 2rem; filter: drop-shadow(6px 6px 0 rgb(0 0 0 / 1));">
@@ -35,9 +35,9 @@ export const GET: APIRoute = async () => {
   const svg = await satori(html as any, {
     fonts: [
       {
-        name: "Inter Latin",
+        name: 'Inter Latin',
         data: fontData,
-        style: "normal",
+        style: 'normal',
       },
     ],
 
@@ -47,7 +47,7 @@ export const GET: APIRoute = async () => {
 
   const opts: ResvgRenderOptions = {
     fitTo: {
-      mode: "width",
+      mode: 'width',
       value: width,
     },
   };
@@ -57,7 +57,7 @@ export const GET: APIRoute = async () => {
 
   return new Response(pngBuffer, {
     headers: {
-      "content-type": "image/png",
+      'content-type': 'image/png',
     },
   });
 };

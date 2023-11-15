@@ -4,9 +4,20 @@ interface Props {
 }
 
 const { content } = Astro.props;
-const timeFormat: Intl.DateTimeFormatOptions = { year: '2-digit', month: 'numeric', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Rome' }
-const lastModifiedDate = new Date(content.lastModified).toLocaleString("it", timeFormat);
-const pubDate = new Date(content.pubDate).toLocaleString("it", timeFormat);
+const timeFormat: Intl.DateTimeFormatOptions = {
+  year: '2-digit',
+  month: 'numeric',
+  day: '2-digit',
+  hour: '2-digit',
+  minute: '2-digit',
+  hour12: false,
+  timeZone: 'Europe/Rome',
+};
+const lastModifiedDate = new Date(content.lastModified).toLocaleString(
+  'it',
+  timeFormat
+);
+const pubDate = new Date(content.pubDate).toLocaleString('it', timeFormat);
 ---
 
 <article class='prose-slate w-sm md:w-prose md:prose poppins'>
@@ -19,6 +30,10 @@ const pubDate = new Date(content.pubDate).toLocaleString("it", timeFormat);
   </p>
   <slot />
   <p class='text-slate'>Scritto da {content.author}</p>
-  <p class='text-slate'>Originariamente pubblicato il {pubDate} e aggiornato l'ultima volta il {lastModifiedDate}</p>
+  <p class='text-slate'>
+    Originariamente pubblicato il {pubDate} e aggiornato l'ultima volta il {
+      lastModifiedDate
+    }
+  </p>
   <a href='/blog/' title='Back to blog'>&larr; Torna agli articoli</a>
 </article>

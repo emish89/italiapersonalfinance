@@ -17,16 +17,15 @@ const { title, description, classList, pageTitle, ogImage } = Astro.props;
 <html lang='en' class='h-full'>
   <!-- head -->
   <script
-    type="text/partytown"
-    src="https://www.googletagmanager.com/gtag/js?id=G-8JYHCBXQZ5"
-  ></script>
-  <script type="text/partytown">
+    type='text/partytown'
+    src='https://www.googletagmanager.com/gtag/js?id=G-8JYHCBXQZ5'></script>
+  <script type='text/partytown'>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
     }
-    gtag("js", new Date());
-    gtag("config", 'G-8JYHCBXQZ5');
+    gtag('js', new Date());
+    gtag('config', 'G-8JYHCBXQZ5');
   </script>
   <!-- more head -->
   <BaseHead ogImage={ogImage} title={title} description={description} />

@@ -1,14 +1,14 @@
 ---
 title: Vecchia Wiki
 pubDate: 2023-11-14 16:42
-author: "Federico Ballarini"
+author: 'Federico Ballarini'
 tags:
   - Wiki
   - IPF
   - Investimenti
-imgUrl: "../../assets/ipf.jpeg"
+imgUrl: '../../assets/ipf.jpeg'
 description: Vecchia Wiki reddit IPF.
-layout: "../../layouts/BlogPost.astro"
+layout: '../../layouts/BlogPost.astro'
 slug: old-wiki
 ---
 

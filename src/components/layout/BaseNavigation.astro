@@ -9,8 +9,8 @@ const navigationItems = [
 ];
 
 const socialIcons = [
-  { 
-    name: 'Search', 
+  {
+    name: 'Search',
     url: '/search',
     icon: 'i-uil-search',
     target: '_self',
@@ -58,7 +58,9 @@ const { pageTitle } = Astro.props;
       }
       {
         socialIcons.map((item) => (
-          <li class={item.desktopOnly? 'hidden md:inline-block': 'inline-block'}>
+          <li
+            class={item.desktopOnly ? 'hidden md:inline-block' : 'inline-block'}
+          >
             <a
               href={item.url}
               class='hover:text-green hover:underline transition-all duration-150 ease-in-out'
