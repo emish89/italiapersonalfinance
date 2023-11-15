@@ -5,22 +5,23 @@ import MobileSocials from '@components/home/MobileSocials.astro';
 import { Pill } from '@eliancodes/brutal-ui';
 import { Button } from '@eliancodes/brutal-ui';
 import { Card } from '@eliancodes/brutal-ui';
+import { getCollection } from 'astro:content';
 
-const builtWith = [
-  { name: 'Astro', url: 'https://astro.build/' },
-  { name: 'UnoCSS', url: 'https://uno.antfu.me/' },
-  {
-    name: 'Content Collections',
-    url: 'https://docs.astro.build/en/guides/content-collections/',
-  },
-  { name: 'RSS', url: 'https://docs.astro.build/en/guides/rss/' },
-  {
-    name: 'Sitemap',
-    url: 'https://docs.astro.build/en/guides/integrations-guide/sitemap/',
-  },
-  { name: 'Vercel', url: 'https://vercel.com' },
-  { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
-];
+const allPosts = await getCollection('blog');
+
+const tags = new Set<string>();
+
+allPosts.forEach((post) => {
+  post.data.tags.forEach((tag) => {
+    tags.add(tag.toLowerCase());
+  });
+});
+const availableTags = Array.from(tags).map((tag) => {
+  return {
+    name: tag,
+    url: `/blog/tags/${tag}`,
+  };
+});
 ---
 
 <Layout
@@ -38,9 +39,13 @@ const builtWith = [
               Italia Personal Finance
             </p>
             <p class='mt-2 outfit text-xl md:text-3xl lg:text-5xl'>
-              Il sito della community Reddit di personal finance più famosa d'Italia
+              Il sito della community Reddit di personal finance più famosa
+              d'Italia
             </p>
-            <Button target={'_self'} href='https://www.reddit.com/r/ItaliaPersonalFinance/'>
+            <Button
+              target={'_self'}
+              href='https://www.reddit.com/r/ItaliaPersonalFinance/'
+            >
               Scopri su Reddit
             </Button>
           </div>
@@ -49,11 +54,11 @@ const builtWith = [
       <div class='col-span-2'>
         <Card>
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
-            Italia Personal Finance parla di 
+            Italia Personal Finance parla di
           </h2>
           <ul class='flex gap-4 flex-wrap'>
             {
-              builtWith.map((item) => (
+              availableTags.map((item) => (
                 <li>
                   <Pill>
                     <a
@@ -77,11 +82,10 @@ const builtWith = [
             La Wiki di IPF
           </h2>
           <p class='poppins'>
-            La pagina Wiki di Italia Personal Finance contiene il materiale base per iniziare ad approcciare la finanza personale e l'investimento.
+            La pagina Wiki di Italia Personal Finance contiene il materiale base
+            per iniziare ad approcciare la finanza personale e l'investimento.
           </p>
-          <Button target={'_self'} href='/blog/'>
-              Vai alla Wiki
-            </Button>
+          <Button target={'_self'} href='/blog/'>Vai alla Wiki</Button>
         </Card>
       </div>
     </section>
