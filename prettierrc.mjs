@@ -5,6 +5,7 @@ export default {
       files: '*.astro',
       options: {
         parser: 'astro',
+        singleQuote: true
       },
     },
   ],
