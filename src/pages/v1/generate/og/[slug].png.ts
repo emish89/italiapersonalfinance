@@ -43,7 +43,7 @@ export const GET: APIRoute = async ({ params, props }) => {
   </div>
   `);
 
-  const svg = await satori(html, {
+  const svg = await satori(html as any, {
     fonts: [
       {
         name: "Inter Latin",

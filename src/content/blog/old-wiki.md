@@ -1,5 +1,5 @@
 ---
-title: Wiki attuale
+title: Vecchia Wiki
 pubDate: 2023-11-14 16:42
 author: "Federico Ballarini"
 tags:
@@ -7,7 +7,7 @@ tags:
   - IPF
   - Investimenti
 imgUrl: "../../assets/ipf.jpeg"
-description: Wiki attuale reddit IPF.
+description: Vecchia Wiki reddit IPF.
 layout: "../../layouts/BlogPost.astro"
 slug: old-wiki
 ---
