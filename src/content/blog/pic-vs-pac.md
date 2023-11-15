@@ -1,0 +1,75 @@
+---
+title: PIC vs PAC
+pubDate: 2023-11-15 23:55
+author: "Federico Ballarini"
+tags:
+  - Wiki
+  - IPF
+  - Investimenti
+imgUrl: "../../assets/ipf.jpeg"
+description: Differenza tra PIC e PAC. Nozioni di base e consigli per iniziare a investire e capire gli strumenti finanziari.
+layout: "../../layouts/BlogPost.astro"
+slug: pic-vs-pac
+---
+
+# PIC vs PAC
+
+## Quale strategia adottare per investire (PAC vs. PIC)
+
+Ci sono numerose tecniche per investire nei mercati. Esse sfruttano diverse strategie di entrata per ottimizzare i rendimenti o minimizzare il rischio. Le due più famose tecniche di investimento sono il Piano di Investimento di Capitale (PIC) o Piano di Accumulo di Capitale (PAC).
+
+- **PIC**: È una strategia che prevede l’investimento sui mercati in un’unica soluzione. Il denaro che si vuole investire è dunque versato tutto subito per l’acquisto di prodotti finanziari. Es. Se si hanno a disposizione 1000€ da investire questi verranno utilizzati tutti oggi per comprare prodotti al prezzo che hanno in questo momento.
+  Il PIC è dunque tendenzialmente più rischioso ma può potenzialmente offrire buoni rendimenti. Se ad esempio investiamo i nostri 1000€ in ETF, esponiamo subito tutti i 1000€ alle future fluttuazioni di mercato (da qui il rischio maggiore) ma dall’altro otterremo il massimo profitto se il valore delle nostre quote di ETF aumenterà. Facendo un PIC ci prendiamo un rischio più grande nella speranza di essere ben ricompensati in futuro.
+
+- **PAC**: È una strategia che prevede l’investimento periodico di piccole quote sul mercato. Il denaro che si vuole investire è perciò versato in piccole somme a intervalli costanti nel tempo. Ad esempio, un PAC mensile prevede che ogni mese venga investita sul mercato una certa somma fissa (che l’investitore sceglierà), un PAC trimestrale farà la stessa cosa ma ogni tre mesi e così via…
+
+Il PAC è una strategia meno rischiosa ma che, proprio per questo motivo, può anche ridurre le possibilità di rendimento.
+
+Ipotizziamo di fare un PAC investendo 100€ al mese. A seconda del prezzo che ogni mese le quote dell’ETF avranno, riusciremmo a comprare più quote se il loro prezzo si sarà abbassato e meno quote se il loro prezzo sarà cresciuto. Il PAC consente quindi di approfittare dei ribassi di mercato per poter acquistare a prezzi “scontati” i nostri prodotti finanziari, abbassando quindi il nostro prezzo medio di acquisto (ovvero la somma totale investita divisa per il numero di quote che abbiamo acquistato). In gergo questa pratica è detta “mediare al ribasso il prezzo”.
+
+Un altro vantaggio del PAC è il fatto che è perfetto per chi ha delle entrate periodiche e risparmia magari ogni mese qualcosa del suo stipendio per destinarlo agli investimenti.
+
+Come anticipato, lo svantaggio di un PAC è il fatto che se i mercati vanno molto bene rende meno di una strategia PIC. Vediamo di seguito due esempi.
+
+Prendiamo per esempio un indice azionario globale come l’MSCI World tra gennaio 2010 e gennaio 2020 e supponiamo di investire 12.000€.
+
+- **PIC**: investendo tutti i soldi subito avremmo avuto, dopo 10 anni, 39.865€
+- **PAC**: investendo 100€ al mese per 10 anni avremmo ottenuto 22.808€
+
+Tra il 2010 e il 2020 i mercati globali hanno vissuto una fase di ottima crescita e la strategia PIC sarebbe stata vincente.
+
+Prendiamo ora sempre l’MSCI World tra agosto 2000 e agosto 2010 e supponiamo di investire sempre 12.000€.
+
+- **PIC**: investendo tutti i soldi subito avremmo avuto, dopo 10 anni, 8.217€
+- **PAC**: investendo 100€ al mese per 10 anni avremmo ottenuto 12.546€
+
+Tra il 2000 e il 2010 i mercati azionari hanno vissuto un periodo terribile. Nel 2000 è esplosa la bolla delle dot-com e nel 2007 è iniziata la Crisi Finanziaria Globale. Qui il PAC avrebbe limitato enormemente i danni facendoci guadagnare 546€ invece che farci perdere 3.783€.
+
+[**QUI**](https://imgur.com/a/z5NQHQK) trovi i grafici che spiegano visivamente queste due situazioni.
+
+Nessuno sa se in futuro sarà meglio investire tramite PIC o PAC perché nessuno sa come andranno i mercati. Un investitore non professionista e che punta a proteggere il capitale e a farlo fruttare senza troppi azzardi farebbe meglio a fare un PAC. Rinuncerà a dei profitti extra nel caso le cose vadano molto bene ma si riparerà enormemente nel caso di catastrofi finanziarie.
+
+### **Smart PAC: una variante del PAC tradizionale**
+
+Come scritto poco sopra, il PAC classico prevede un investimento periodico costante sui mercati. Esiste in realtà una variante del PAC che presenta una piccola differenza rispetto a quello tradizionale e che possiamo chiamare **Smart PAC**.
+Lo Smart PAC prevede sempre un investimento periodico ma la quantità di denaro che ogni volta viene investita dipende dal prezzo del prodotto che acquistiamo. L'idea è quella di investire di più quando il prezzo è basso e meno quando il prezzo è alto, così da approfittare dei ribassi del mercato per comprare a prezzi scontati.
+
+**Come si fa uno Smart PAC? Un esempio con gli ETF**
+
+- Si calcola ogni mese (se il PAC è mensile) il prezzo medio di acquisto complessivo delle quote dell'ETF come:
+
+_PMC = Totale denaro investito/Numero totale quote acquistate_
+
+- Si confronta il prezzo che l'ETF ha oggi con il PMC. Più il prezzo attuale è basso rispetto al PMC più andremo ad investire nel nostro prossimo acquisto.
+  Ad esempio, se partiamo con un investimento standard di 200€ al mese avremo:
+
+| **Variazione rispetto al PMC** | **Investimento periodico** | **Moltiplicatore** |
+| ------------------------------ | -------------------------- | ------------------ |
+| -10% o meglio                  | €200                       | 1                  |
+| tra -10% e -15%                | €250                       | 1.25               |
+| tra -15% e -20%                | €300                       | 1.5                |
+| -20% o peggio                  | €350                       | 1.75               |
+
+I moltiplicatori della cifra base di 200€ li sceglierà l'investitore a seconda delle sue possibilità, questi numeri sono solo esempi. Lo Smart PAC aiuta dunque a compensare i ribassi di mercato e ad abbassare il prezzo medio di acquisto, consentendo di avere profitti maggiori quando i mercati torneranno a crescere.
+
+Per aiutarti con questi conti [**QUI**](https://docs.google.com/spreadsheets/d/1VdiWooKxatwA0mLxuMi_qExItQ8fqB0GPaYQvbxJkdk/edit?usp=sharing) trovi un Google Sheet già pronto, dove devi solo inserire la somma di partenza, la lista dei tuoi acquisti e scegliere i moltiplicatori che più desideri.
