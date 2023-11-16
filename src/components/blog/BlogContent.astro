@@ -23,13 +23,18 @@ const pubDate = new Date(content.pubDate).toLocaleString('it', timeFormat);
 <article class='prose-slate w-sm md:w-prose md:prose poppins'>
   <a href='/blog/' title='Back to blog'>&larr; Torna agli articoli</a>
   <p class='text-slate text-sm md:text-base'>
-    Ultimo aggiornamento: {lastModifiedDate} - Autore: {content.author}
+    Ultimo aggiornamento: {lastModifiedDate} - Autore: <a
+      href={'https://www.reddit.com/' + content.author}>{content.author}</a
+    >
   </p>
   <p class='text-slate italic text-sm md:text-base'>
     Tempo di lettura: {Math.round(content.minutesRead)} minuti
   </p>
   <slot />
-  <p class='text-slate'>Scritto da {content.author}</p>
+  <p class='text-slate'>
+    Scritto da <a href={'https://www.reddit.com/' + content.author}
+      >{content.author}</a>
+  </p>
   <p class='text-slate'>
     Originariamente pubblicato il {pubDate} e aggiornato l'ultima volta il {
       lastModifiedDate
