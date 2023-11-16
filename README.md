@@ -50,10 +50,10 @@ In this theme, I'm using [UnoCSS](https://uno.antfu.me/) to generate the CSS. It
 To generate the sitemap, you don't need to do anything. It's automatically generated when you build your site. You'll just need to switch out the `site` on `astro.config.mjs` to your own.
 
 ```js title="astro.config.mjs"
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: "https://example.com",
+  site: 'https://example.com',
 });
 ```
 

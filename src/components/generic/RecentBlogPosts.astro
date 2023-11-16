@@ -11,7 +11,7 @@ interface Props {
 const { count } = Astro.props;
 
 const posts = await getCollection('blog').then((posts) =>
-  posts.reverse().slice(0, count ?? 3)
+  posts.reverse().slice(0, count ?? 3),
 );
 ---
 

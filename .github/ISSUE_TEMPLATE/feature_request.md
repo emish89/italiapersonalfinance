@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea to TODO
-title: ""
+title: ''
 labels: enhancement
 assignees: emish89
 ---

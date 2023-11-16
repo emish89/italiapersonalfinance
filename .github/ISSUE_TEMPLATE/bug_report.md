@@ -1,7 +1,7 @@
 ---
 name: Bug report
 about: Create a report to help improve TODO
-title: ""
+title: ''
 labels: bug
 assignees: emish89
 ---

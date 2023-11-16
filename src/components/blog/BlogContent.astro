@@ -15,7 +15,7 @@ const timeFormat: Intl.DateTimeFormatOptions = {
 };
 const lastModifiedDate = new Date(content.lastModified).toLocaleString(
   'it',
-  timeFormat
+  timeFormat,
 );
 const pubDate = new Date(content.pubDate).toLocaleString('it', timeFormat);
 ---

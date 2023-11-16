@@ -7,7 +7,7 @@ import { Button } from '@eliancodes/brutal-ui';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog').then((collection) =>
-    collection.reverse()
+    collection.reverse(),
   );
 
   const tags: string[] = [];
@@ -24,7 +24,7 @@ export async function getStaticPaths() {
       props: {
         tag,
         blogposts: allPosts.filter((post) =>
-          post.data.tags.map((tag) => tag.toLowerCase()).includes(tag)
+          post.data.tags.map((tag) => tag.toLowerCase()).includes(tag),
         ),
       },
     };
