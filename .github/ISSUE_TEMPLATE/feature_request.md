@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea to TODO
+about: Suggest an idea to https://italia-personal-finance.netlify.app/
 title: ''
 labels: enhancement
 assignees: emish89

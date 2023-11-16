@@ -1,49 +1,29 @@
-# Brutal - The neobrutalist Astro theme
-
-Brutal is a minimal neobrutalist theme for [Astro](https://astro.build/). It's based on Neobrutalist Web Design, a movement that aims to create websites with a minimalistic and functional design. It has some integrations like Image Optimization, RSS, Sitemap, ready to get your SEO done right.
-
-The theme has no JavaScript integration out of the box, but can always be added of course.
-
-This template is based on [my own personal website](https://www.elian.codes/), with some more generic things added.
+# Italia Personal Finance Wiki - Reddit
 
 ## Usage
 
-You can bootstrap a new Astro project using Brutal with the following command:
-
-```bash
-# npm 6.x
-npx create astro@latest --template eliancodes/brutal
-
-# npm 7+
-npx create astro@latest -- --template eliancodes/brutal
-
-# pnpm
-pnpm dlx create-astro --template eliancodes/brutal
-
-# yarn
-yarn create astro --template eliancodes/brutal
-```
+This project is based on [Astro Framework](https://github.com/withastro/astro) with [UnoCSS](https://uno.antfu.me/) and [Brutal theme](https://github.com/ElianCodes/brutal)
 
 ### Commands
 
 All commands are run from the root of the project, from a terminal:
 
-(Here I use PNPM, no problem if you use NPM or Yarn)
+(Here I use NPM, no problem if you use PNPM or Yarn)
 
-| Command             | Action                                             |
-| :------------------ | :------------------------------------------------- |
-| `pnpm install`      | Installs dependencies                              |
-| `pnpm dev`          | Starts local dev server at `localhost:3000`        |
-| `pnpm build`        | Build your production site to `./dist/`            |
-| `pnpm preview`      | Preview your build locally, before deploying       |
-| `pnpm astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `pnpm astro --help` | Get help using the Astro CLI                       |
+| Command            | Action                                             |
+| :----------------- | :------------------------------------------------- |
+| `npm install`      | Installs dependencies                              |
+| `npm dev`          | Starts local dev server at `localhost:3000`        |
+| `npm build`        | Build your production site to `./dist/`            |
+| `npm preview`      | Preview your build locally, before deploying       |
+| `npm astro ...`    | Run CLI commands like `astro add`, `astro preview` |
+| `npm astro --help` | Get help using the Astro CLI                       |
 
 ## Integrations
 
 ###
 
-In this theme, I'm using [UnoCSS](https://uno.antfu.me/) to generate the CSS. It's a utility-first CSS framework that uses a single class to style elements. It's very easy to use and has a lot of features. It's setup to be completely compatible with TailwindCSS, with the advantage of being able to use PureCSS icons. You can always switch out UnoCSS for TailwindCSS if you want to, without breaking the general styles.
+In this project, I'm using [UnoCSS](https://uno.antfu.me/) to generate the CSS. It's a utility-first CSS framework that uses a single class to style elements. It's very easy to use and has a lot of features. It's setup to be completely compatible with TailwindCSS, with the advantage of being able to use PureCSS icons. You can always switch out UnoCSS for TailwindCSS if you want to, without breaking the general styles.
 
 ### Sitemap
 
@@ -59,9 +39,9 @@ export default defineConfig({
 
 ### RSS
 
-The RSS feed is automatically generated from the Markdown files in the `src/content/blog` folder. You can ofcourse completely change this to your own needs.
+The RSS feed is automatically generated from the Markdown files in the `src/content/blog` folder.
 
-The RSS will output to `https://example.com/feed.xml` by default. You can change this, by renaming `src/pages/feed.xml.js`.
+The RSS will output to `https://example.com/feed.xml` by default. Can be changed by renaming `src/pages/feed.xml.js`.
 
 ### Image
 
@@ -91,27 +71,18 @@ This directory contains all components for the home page.
 
 This directory contains all layout components. For instance, the header and footer and `<head>` section.
 
-### Colors
+## Suggestions
 
-The theme has a few colors that you can use in the included components.
+All the suggestions in terms of wiki content are really appreciated. You can create a PR with the markdown file or write us the content in a proper feature request.
 
-- red
-- blue
-- green
-- yellow
-- pink
-- purple
-- orange
-- teal
-- cyan
-- lime
-- emerald
-- fuchsia
-- violet
-- rose
-- sky
-- amber
+## Disclaimer
 
-More colors can be added in `astro.config.mjs` in the `colors` array.
+The information provided on this wiki is for general informational purposes only. It is not intended as, and should not be considered, financial advice. We strongly recommend that you consult with a qualified financial advisor or professional before making any financial decisions.
 
-If you need more from this theme, don't hesitate to open an issue or reach out to me!
+Accuracy and Completeness:
+While we strive to provide accurate and up-to-date information, thi wiki makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the information provided. Any reliance you place on such information is therefore strictly at your own risk.
+
+Investment Risks:
+Investing in financial markets involves risk, and past performance is not indicative of future results. The value of investments may fluctuate, and investors may lose their entire investment. The wiki is not responsible for any financial loss or damage that may arise from your use of the information provided.
+
+If you have any questions about this disclaimer or the information on this wiki, please contact us through Github.

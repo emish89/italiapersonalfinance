@@ -1,7 +1,7 @@
 ---
 title: Vecchia Wiki
 pubDate: 2023-11-14 16:42
-author: 'Federico Ballarini'
+author: 'u/emish89'
 tags:
   - Wiki
   - IPF
