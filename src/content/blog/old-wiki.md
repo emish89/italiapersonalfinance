@@ -10,6 +10,7 @@ imgUrl: '../../assets/ipf.jpg'
 description: Vecchia Wiki reddit IPF.
 layout: '../../layouts/BlogPost.astro'
 slug: old-wiki
+lastReviewer: 'u/emish89'
 ---
 
 # CONTO TITOLI

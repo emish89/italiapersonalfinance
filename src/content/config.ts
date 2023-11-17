@@ -10,6 +10,7 @@ const blogCollection = defineCollection({
       pubDate: z.string().transform((str) => new Date(str)),
       imgUrl: image(),
       draft: z.boolean().optional().default(false),
+      lastReviewer: z.string(),
     }),
 });
 
