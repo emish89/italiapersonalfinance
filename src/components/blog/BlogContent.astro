@@ -32,13 +32,19 @@ const pubDate = new Date(content.pubDate).toLocaleString('it', timeFormat);
   </p>
   <slot />
   <p class='text-slate'>
-    Scritto da <a href={'https://www.reddit.com/' + content.author}
-      >{content.author}</a>
+    Scritto da: <a href={'https://www.reddit.com/' + content.author}
+      >{content.author}</a
+    > - Ultima revisione: <a
+      href={'https://www.reddit.com/' + content.lastReviewer}
+      >{content.lastReviewer}</a
+    >
   </p>
   <p class='text-slate'>
     Originariamente pubblicato il {pubDate} e aggiornato l'ultima volta il {
       lastModifiedDate
     }
   </p>
-  <a href='/blog/' title='Back to blog'>&larr; Torna agli articoli</a>
+  <a href='javascript: history.go(-1)' title='Back page'
+    >&larr; Torna alla pagina precedente</a
+  >
 </article>

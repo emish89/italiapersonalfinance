@@ -35,7 +35,7 @@ export default defineConfig({
     },
     {
       'brutal-btn':
-        'bg-white drop-shadow-custom-1 hover:outline-none hover:drop-shadow-custom-2 sanchez inline-block px-2 border-2 border-black transition-all ease-in-out duration-150',
+        'bg-white drop-shadow-custom-1 hover:outline-none hover:drop-shadow-custom-2 inline-block px-2 border-2 border-black transition-all ease-in-out duration-150',
     },
   ],
 });
