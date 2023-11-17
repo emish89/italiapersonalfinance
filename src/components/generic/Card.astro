@@ -1,0 +1,54 @@
+---
+interface Props {
+  color?: string;
+  padded?: boolean;
+}
+const colors = [
+  '#c084fc',
+  '#f472b6',
+  '#fb7185',
+  '#e879f9',
+  '#a78bfa',
+  '#818cf8',
+  '#60a5fa',
+  '#38bdf8',
+  '#22d3ee',
+  '#2dd4bf',
+  '#34d399',
+  '#4ade80',
+  '#a3e635',
+  '#facc15',
+  '#fb923c',
+  '#f87171',
+];
+
+if (Astro.props.color === undefined) {
+  Astro.props.color = colors[Math.floor(Math.random() * colors.length)];
+}
+
+const { color, padded } = Astro.props;
+---
+
+<style define:vars={{ color: color }}>
+  div.brutal-card {
+    background-color: var(--color);
+    border-radius: 0.5rem;
+    border: 3px solid black;
+    filter: drop-shadow(7px 7px 0 rgb(0 0 0 / 1));
+    transition: all;
+    padding: 1rem;
+    transition-duration: 0.5s;
+    animation: ease-in-out;
+    height: 100%;
+  }
+  div.brutal-card:hover {
+    filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
+  }
+  div.brutal-card-padded {
+    padding: 2rem;
+  }
+</style>
+
+<div class={padded ? 'brutal-card brutal-card-padded' : 'brutal-card'}>
+  <slot />
+</div>

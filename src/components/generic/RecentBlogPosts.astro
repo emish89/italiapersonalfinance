@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import BlogList from '../blog/BlogList.astro';
-import { Card } from '@eliancodes/brutal-ui';
 import { Button } from '@eliancodes/brutal-ui';
+import Card from './Card.astro';
 
 interface Props {
   count?: number;
@@ -16,7 +16,7 @@ const posts = await getCollection('blog').then((posts) =>
 ---
 
 <section class='mt-8'>
-  <Card>
+  <Card padded>
     <div class='flex justify-between items-start'>
       <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
         Recent Blogposts
