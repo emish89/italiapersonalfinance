@@ -88,3 +88,12 @@ body::-webkit-scrollbar-thumb {
 html {
   scroll-behavior: smooth;
 }
+
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
