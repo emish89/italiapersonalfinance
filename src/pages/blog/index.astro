@@ -3,9 +3,16 @@ import { getCollection } from 'astro:content';
 import Layout from '@layouts/Default.astro';
 import BlogList from '@components/blog/BlogList.astro';
 
-const posts = await getCollection('blog').then((collection) =>
-  collection.reverse(),
-);
+const posts = await getCollection('blog').then((collection) => {
+  collection = collection.sort((a, b) => {
+    return b.data.pubDate.getTime() - a.data.pubDate.getTime();
+  });
+  const wikiIndex = collection.findIndex(
+    (element) => element.data.title === 'Wiki IPF Reddit',
+  );
+  collection.unshift(collection.splice(wikiIndex, 1)[0]);
+  return collection;
+});
 ---
 
 <Layout
