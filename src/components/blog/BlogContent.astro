@@ -21,7 +21,9 @@ const pubDate = new Date(content.pubDate).toLocaleString('it', timeFormat);
 ---
 
 <article class='prose-slate w-sm md:w-prose md:prose poppins'>
-  <a href='/blog/' title='Back to blog'>&larr; Torna agli articoli</a>
+  <a href='javascript: history.go(-1)' title='Back page'
+    >&larr; Torna alla pagina precedente</a
+  >
   <p class='text-slate text-sm md:text-base'>
     Ultimo aggiornamento: {lastModifiedDate} - Autore: <a
       href={'https://www.reddit.com/' + content.author}>{content.author}</a
