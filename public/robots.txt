@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
-Host: TODO
-Sitemap: TODO
+Host: https://italia-personal-finance.netlify.app/ipf.jpg
+Sitemap: https://italia-personal-finance.netlify.app/sitemap-index.xml
