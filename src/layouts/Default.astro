@@ -10,8 +10,19 @@ interface Props {
   classList?: string;
   pageTitle?: string;
   ogImage?: URL;
+  lastModified?: string;
+  pubDate?: string;
 }
-const { title, description, classList, pageTitle, ogImage } = Astro.props;
+const {
+  title,
+  description,
+  classList,
+  pageTitle,
+  ogImage,
+  lastModified,
+  pubDate,
+} = Astro.props;
+const publishedTime = pubDate ? new Date(pubDate) : new Date();
 ---
 
 <html lang='en' class='h-full'>
@@ -28,7 +39,13 @@ const { title, description, classList, pageTitle, ogImage } = Astro.props;
     gtag('config', 'G-8JYHCBXQZ5');
   </script>
   <!-- more head -->
-  <BaseHead ogImage={ogImage} title={title} description={description} />
+  <BaseHead
+    ogImage={ogImage}
+    title={title}
+    description={description}
+    modifiedTime={lastModified}
+    publishedTime={publishedTime.toISOString()}
+  />
 
   <body class:list={[classList]}>
     <BaseNavigation {pageTitle} />

@@ -29,11 +29,11 @@ const pubDate = new Date(content.pubDate).toLocaleString('it', timeFormat);
       href={'https://www.reddit.com/' + content.author}>{content.author}</a
     >
   </p>
-  <p class='text-slate italic text-sm md:text-base'>
+  <p class='text-slate italic text-sm md:text-base pb-12'>
     Tempo di lettura: {Math.round(content.minutesRead)} minuti
   </p>
   <slot />
-  <p class='text-slate'>
+  <p class='text-slate pt-24'>
     Scritto da: <a href={'https://www.reddit.com/' + content.author}
       >{content.author}</a
     > - Ultima revisione: <a

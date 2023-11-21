@@ -5,6 +5,8 @@ interface Props {
   title: string;
   description: string;
   ogImage?: URL;
+  modifiedTime?: string;
+  publishedTime?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -13,7 +15,8 @@ if (Astro.props.ogImage === undefined) {
   Astro.props.ogImage = new URL('/v1/generate/og/default.png', Astro.url);
 }
 
-const { title, description, ogImage } = Astro.props;
+const { title, description, ogImage, publishedTime, modifiedTime } =
+  Astro.props;
 ---
 
 <head>
@@ -35,6 +38,9 @@ const { title, description, ogImage } = Astro.props;
   <meta property='twitter:title' content={title} />
   <meta property='twitter:description' content={description} />
   <meta property='twitter:image' content={ogImage} />
+
+  <meta property='article:published_time' content={publishedTime} />
+  <meta property='article:modified_time' content={modifiedTime} />
 
   <link rel='canonical' href={canonicalURL} />
   <link rel='icon' type='image/svg' href='/favicon.svg' />
