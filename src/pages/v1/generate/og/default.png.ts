@@ -20,8 +20,8 @@ export const GET: APIRoute = async () => {
       <div style="display: flex; flex-direction: column; justify-content: space-between; width: 100%; filter: drop-shadow()">
         <div style="display: flex; flex-direction: column; gap: 0.75rem;">  
           <p style="font-size: 48px;">Italia Personal Finance</p>
-          <p style="font-size: 38px;">Wiki della community</p>
-          <p style="font-size: 38px;">Direttamente da Reddit</p>
+          <p style="font-size: 38px;">Wiki della community italiana di Italia Personal Finance su Reddit.</p>
+          <p style="font-size: 38px;">Informazioni e link utili per districarsi nel mondo degli investimenti e della personal finance Italiana</p>
         </div>
         <div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: -2rem;">
           <p style="font-size: 32px">${link}</p>
