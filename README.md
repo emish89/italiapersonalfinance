@@ -1,14 +1,59 @@
 # Italia Personal Finance Wiki - Reddit
 
-## Usage
+# Intro in Italiano
 
-This project is based on [Astro Framework](https://github.com/withastro/astro) with [UnoCSS](https://uno.antfu.me/) and [Brutal theme](https://github.com/ElianCodes/brutal)
+Wiki open source del progetto Italia Personal Finance.
+
+Di seguito le istruzioni per aggiungere o modificare un contenuto anche se non avvezzi a Github.
+
+In caso di problemi aprite una "issue" dal menu apposito e cercheremo di aiutarvi.
+
+## Vuoi contribuire scrivendo o modificando un articolo?
+
+Puoi farlo direttamente anche da Github, tutti gli articoli sono nella cartella `src/content/blog` e sono in markdown,
+la stessa sintassi usata su Reddit (`.md` e `.mdx`).
+
+![Tutorial video](https://github.com/emish89/italiapersonalfinance/blob/main/readme/pr-gif.gif)
+
+### Step 1
+
+Vai nella cartella `src/content/blog` e seleziona l'articolo da modificare o premi "add file" in alto a destra
+
+### Step 2
+
+Premi "Fork this repository", andando quindi a creare la versione del repository forkata nel tuo profilo
+
+### Step 3
+
+Modifica il contenuto come preferisci e alla fine premi "Commit changes" in alto a destra
+
+### Step 4
+
+Aggiungi un "commit message" che spieghi cosa hai aggiunto o modificato brevemente
+
+### Step 5
+
+Premi "propose change" e nella schermata successiva "create pull request" in alto a destra
+
+### Step 6
+
+Aggiungi un titolo e una descrizione alla pull request, che permetta di capire cosa stai andando ad aggiungere/modificare
+
+### Step 7
+
+Attendi che uno dei maintainer approvi la richiesta e a quel punto il tuo contenuto verrà pubblicato!
+
+# Technical part
 
 ## Articles
 
 All the wiki articles are in the `src/content/blog` folder, they are markdown (`.md` and `.mdx`) files.
 You can create a PR for adding new articles or change the content of the existing ones only playing with markdown.
 No other knowledge needed
+
+## Usage
+
+This project is based on [Astro Framework](https://github.com/withastro/astro) with [UnoCSS](https://uno.antfu.me/) and [Brutal theme](https://github.com/ElianCodes/brutal)
 
 ### Commands
 
