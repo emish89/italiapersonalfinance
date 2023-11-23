@@ -4,6 +4,12 @@
 
 This project is based on [Astro Framework](https://github.com/withastro/astro) with [UnoCSS](https://uno.antfu.me/) and [Brutal theme](https://github.com/ElianCodes/brutal)
 
+## Articles
+
+All the wiki articles are in the `src/content/blog` folder, they are markdown (`.md` and `.mdx`) files.
+You can create a PR for adding new articles or change the content of the existing ones only playing with markdown.
+No other knowledge needed
+
 ### Commands
 
 All commands are run from the root of the project, from a terminal:
@@ -42,8 +48,6 @@ export default defineConfig({
 The RSS feed is automatically generated from the Markdown files in the `src/content/blog` folder.
 
 The RSS will output to `https://example.com/feed.xml` by default. Can be changed by renaming `src/pages/feed.xml.js`.
-
-### Image
 
 ## Components
 
