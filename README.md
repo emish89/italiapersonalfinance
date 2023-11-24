@@ -1,5 +1,16 @@
 # Italia Personal Finance Wiki - Reddit
 
+# To-Do List
+
+## In corso di realizzazione
+
+- Realizzazione [guida per il recupero delle minusvalenze](src/content/blog/loss-recovery.mdx) | [lucaosti](https://github.com/lucaosti/italiapersonalfinance/src/content/blog/loss-recovery.mdx);
+
+## Idee da realizzare
+
+- Approfondimento [tassazione](src/content/blog/taxation.mdx):
+  - Differenza tra redditi da capitali e diversi;
+
 # Intro in Italiano
 
 Wiki open source del progetto Italia Personal Finance.
