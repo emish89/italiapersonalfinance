@@ -7,7 +7,9 @@ import { Button } from '@eliancodes/brutal-ui';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog').then((collection) =>
-    collection.reverse(),
+    collection.sort(
+      (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+    ),
   );
 
   const tags: string[] = [];
@@ -46,7 +48,7 @@ const { tag, blogposts } = Astro.props;
 >
   <main class='p-6 bg-lime-200 grid gap-4'>
     <div>
-      <Button href='/blog/'>&larr; Back to blog</Button>
+      <Button href='/blog/'>&larr; Torna al blog</Button>
     </div>
     <BlogList posts={blogposts} />
   </main>

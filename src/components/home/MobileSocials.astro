@@ -22,12 +22,12 @@ const socials = [
 ---
 
 <section class='md:hidden'>
-  <h2 class='hidden'>Socials section</h2>
+  <h2 class='hidden'>Socials</h2>
   <ul class='flex justify-between'>
     {
       socials.map((item) => (
         <li class='bg-white px-4 py-2 text-green border-black border-2 rounded card-shadow'>
-          <a href={item.url} target={item.target} title={`Go to ${item.name}`}>
+          <a href={item.url} target={item.target} title={`Vai a ${item.name}`}>
             <div class:list={[item.icon, 'p-6']} />
           </a>
         </li>
