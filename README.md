@@ -4,7 +4,7 @@
 
 ## In corso di realizzazione
 
-- Realizzazione [guida per il recupero delle minusvalenze](src/content/blog/loss-recovery.mdx) | [lucaosti](https://github.com/lucaosti/italiapersonalfinance/src/content/blog/loss-recovery.mdx);
+- Realizzazione [guida per il recupero delle minusvalenze](src/content/blog/loss-recovery.mdx) | [lucaosti](https://github.com/lucaosti/italiapersonalfinance/blob/main/src/content/blog/loss-recovery.mdx);
 
 ## Idee da realizzare
 
