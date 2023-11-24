@@ -37,7 +37,7 @@ const { pageTitle } = Astro.props;
 
 <header class='border-b-4 border-black flex justify-between p-6 items-center'>
   {pageTitle && <h1 class='hidden'>{pageTitle}</h1>}
-  <a href='/' title='Back to Home'>
+  <a href='/' title='Torna alla Home'>
     <p class='righteous md:text-5xl'>Italia Personal Finance</p>
   </a>
   <nav class='inline-block'>
@@ -49,7 +49,7 @@ const { pageTitle } = Astro.props;
             <a
               class='text-lg font-medium hover:text-green hover:underline transition-all duration-150 ease-in-out'
               href={item.url}
-              title={`Go to ${item.name}`}
+              title={`Vai a ${item.name}`}
             >
               {item.name}
             </a>
