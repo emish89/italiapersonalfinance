@@ -1,29 +1,44 @@
 import Fuse from 'fuse.js';
 import { useState } from 'react';
 
+type FrontmatterType = {
+  title: string;
+  description: string;
+  slug: string;
+};
 // Configs fuse.js
 // https://fusejs.io/api/options.html
 const options = {
-  keys: ['frontmatter.title', 'frontmatter.description', 'frontmatter.slug'],
+  keys: [
+    'frontmatter.title',
+    'frontmatter.description',
+    'frontmatter.slug',
+    'body',
+    'content',
+  ],
   includeMatches: true,
   minMatchCharLength: 2,
   threshold: 0.5,
 };
 
-function Search({ searchList }) {
+const Search = ({
+  searchList,
+}: {
+  searchList: Record<string, FrontmatterType>[];
+}) => {
   // Following code
   const [query, setQuery] = useState('');
   const fuse = new Fuse(searchList, options);
   // Set a limit to the posts: 5
   const posts = fuse
-    .search(query)
+    .search<Record<string, FrontmatterType>>(query)
     .map((result) => result.item)
     .slice(0, 5);
 
-  function handleOnSearch({ target = {} }) {
-    const { value } = target;
+  const handleOnSearch = ({ target = {} }) => {
+    const { value } = target as HTMLInputElement;
     setQuery(value);
-  }
+  };
 
   return (
     <div>
@@ -74,5 +89,5 @@ function Search({ searchList }) {
       </ul>
     </div>
   );
-}
+};
 export default Search;
