@@ -7,7 +7,9 @@ import { Button } from '@eliancodes/brutal-ui';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog').then((collection) =>
-    collection.reverse(),
+    collection.sort(
+      (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+    ),
   );
 
   const tags: string[] = [];
