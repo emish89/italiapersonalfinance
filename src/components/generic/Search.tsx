@@ -1,39 +1,16 @@
-import Fuse from 'fuse.js';
 import { useState } from 'react';
+import MiniSearch from 'minisearch';
 
-type FrontmatterType = {
-  title: string;
-  description: string;
-  slug: string;
-};
-// Configs fuse.js
-// https://fusejs.io/api/options.html
-const options = {
-  keys: [
-    'frontmatter.title',
-    'frontmatter.description',
-    'frontmatter.slug',
-    'body',
-    'content',
-  ],
-  includeMatches: true,
-  minMatchCharLength: 2,
-  threshold: 0.5,
-};
-
-const Search = ({
-  searchList,
-}: {
-  searchList: Record<string, FrontmatterType>[];
-}) => {
+const Search = ({ searchList }: { searchList: Record<string, any>[] }) => {
+  let miniSearch = new MiniSearch({
+    fields: ['body'], // fields to index for full-text search
+    storeFields: ['data', 'slug'], // fields to return with search results
+  });
+  miniSearch.addAll(searchList);
   // Following code
   const [query, setQuery] = useState('');
-  const fuse = new Fuse(searchList, options);
   // Set a limit to the posts: 5
-  const posts = fuse
-    .search<Record<string, FrontmatterType>>(query)
-    .map((result) => result.item)
-    .slice(0, 5);
+  const posts = miniSearch.search(query, { prefix: true }).slice(0, 5);
 
   const handleOnSearch = ({ target = {} }) => {
     const { value } = target as HTMLInputElement;
@@ -72,17 +49,12 @@ const Search = ({
       <ul className='list-none'>
         {posts &&
           posts.map((post) => (
-            <li
-              className='py-2 brutal-card poppins'
-              key={post?.frontmatter.slug}
-            >
-              <a href={`/blog/${post.frontmatter.slug}`}>
+            <li className='py-2 brutal-card poppins' key={post?.slug}>
+              <a href={`/blog/${post.slug}`}>
                 <p className='text-lg md:text-xl hover:underline underline-offset-2'>
-                  {post.frontmatter.title}
+                  {post.data.title}
                 </p>
-                <p className='text-sm text-gray-800'>
-                  {post.frontmatter.description}
-                </p>
+                <p className='text-sm text-gray-800'>{post.data.description}</p>
               </a>
             </li>
           ))}
