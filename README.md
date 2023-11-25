@@ -43,6 +43,17 @@ Aggiungi un titolo e una descrizione alla pull request, che permetta di capire c
 
 Attendi che uno dei maintainer approvi la richiesta e a quel punto il tuo contenuto verrà pubblicato!
 
+# To-Do List
+
+## In corso di realizzazione
+
+Attualmente nulla
+
+## Idee da realizzare
+
+- Approfondimento [tassazione](src/content/blog/taxation.mdx):
+  - Differenza tra redditi da capitali e diversi;
+
 # Technical part
 
 ## Articles
