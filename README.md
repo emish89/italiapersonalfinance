@@ -47,7 +47,7 @@ Attendi che uno dei maintainer approvi la richiesta e a quel punto il tuo conten
 
 ## In corso di realizzazione
 
-- Realizzazione [guida per il recupero delle minusvalenze](src/content/blog/loss-recovery.mdx) | [lucaosti](https://github.com/lucaosti/italiapersonalfinance);
+- Realizzazione [guida per il recupero delle minusvalenze](src/content/blog/loss-recovery.mdx) | lucaosti;
 
 ## Idee da realizzare
 
