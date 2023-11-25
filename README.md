@@ -1,6 +1,6 @@
 # Italia Personal Finance Wiki - Reddit
 
-# Intro in Italiano
+# 👋 Intro in Italiano
 
 Wiki open source del progetto Italia Personal Finance.
 
@@ -8,7 +8,7 @@ Di seguito le istruzioni per aggiungere o modificare un contenuto anche se non a
 
 In caso di problemi aprite una "issue" dal menu apposito e cercheremo di aiutarvi.
 
-## Vuoi contribuire scrivendo o modificando un articolo?
+## 🔨 Vuoi contribuire scrivendo o modificando un articolo?
 
 Puoi farlo direttamente anche da Github, tutti gli articoli sono nella cartella `src/content/blog` e sono in markdown,
 la stessa sintassi usata su Reddit (`.md` e `.mdx`).
@@ -43,18 +43,28 @@ Aggiungi un titolo e una descrizione alla pull request, che permetta di capire c
 
 Attendi che uno dei maintainer approvi la richiesta e a quel punto il tuo contenuto verrà pubblicato!
 
-# To-Do List
+## 🍼 Vuoi contribuire in modo più semplice?
 
-## In corso di realizzazione
+Se non hai familiarità con Github e vuoi contribuire alla wiki oppure se esiste già un post su Reddit e vuoi segnalarlo per farlo aggiungere,
+puoi utilizzare questi 2 semplicissimi metodi:
 
-Attualmente nulla
+- [Clicca qui per aggiungere un articolo](https://github.com/emish89/italiapersonalfinance/issues/new?assignees=emish89&labels=article&projects=&template=new_article.md&title=)
 
-## Idee da realizzare
+- [Clicca qui per segnalare un post da aggiungere](https://github.com/emish89/italiapersonalfinance/issues/new?assignees=emish89&labels=post&projects=&template=post_to_article.md&title=)
+
+# 📋 To-Do List
+
+## ✨ Idee da realizzare
 
 - Approfondimento [tassazione](src/content/blog/taxation.mdx):
-  - Differenza tra redditi da capitali e diversi;
+- Differenza tra redditi da capitali e diversi;
 
-# Technical part
+## 💼 In corso di realizzazione
+
+- Theme switcher
+- Arricchimento articoli esistenti
+
+# 🪒 Technical part
 
 ## Articles
 
@@ -135,7 +145,7 @@ This directory contains all layout components. For instance, the header and foot
 
 All the suggestions in terms of wiki content are really appreciated. You can create a PR with the markdown file or write us the content in a proper feature request.
 
-## Disclaimer
+## 🚶 Disclaimer
 
 The information provided on this wiki is for general informational purposes only. It is not intended as, and should not be considered, financial advice. We strongly recommend that you consult with a qualified financial advisor or professional before making any financial decisions.
 
