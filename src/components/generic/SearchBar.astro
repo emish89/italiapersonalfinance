@@ -1,9 +1,9 @@
 ---
+import { getCollection } from 'astro:content';
 import Search from './Search';
-const allPosts = await Astro.glob('../../content/blog/*.{md,mdx}');
-const posts = allPosts.filter(
-  (post) => !post.frontmatter.draft && post.frontmatter.slug,
-);
+
+const allPosts = await getCollection('blog');
+const posts = allPosts.filter((post) => !post.data.draft);
 ---
 
 <Search client:load searchList={posts} />
