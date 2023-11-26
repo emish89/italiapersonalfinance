@@ -3,6 +3,7 @@ import {
   presetIcons,
   presetWind,
   presetTypography,
+  type Awaitable,
 } from 'unocss';
 
 export default defineConfig({
@@ -11,7 +12,9 @@ export default defineConfig({
     presetIcons({
       collections: {
         logos: () =>
-          import('@iconify-json/logos/icons.json').then((i) => i.default),
+          import('@iconify-json/logos/icons.json').then(
+            (i) => i.default,
+          ) as Awaitable<any>,
         uil: () =>
           import('@iconify-json/uil/icons.json').then((l) => l.default),
       },
