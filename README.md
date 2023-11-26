@@ -54,6 +54,9 @@ puoi utilizzare questi 2 semplicissimi metodi:
 
 # 📋 To-Do List
 
+- https://www.reddit.com/r/ItaliaPersonalFinance/comments/184jyft/confronto_offerte_luce_e_gas_foglio_di_calcolo/
+- https://docs.google.com/document/d/1MQOMpzxx-n7lJvnBu1pJALk9lk2u-YOjz6eIPtxyi4Q/edit#heading=h.lmsq8n3ejmb7
+
 ## ✨ Idee da realizzare
 
 - Approfondimento [tassazione](src/content/blog/taxation.mdx):
