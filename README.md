@@ -33,13 +33,17 @@ Aggiungi un "commit message" che spieghi cosa hai aggiunto o modificato brevemen
 
 ### Step 5
 
-Premi "propose change" e nella schermata successiva "create pull request" in alto a destra
+Premi "propose change"
 
 ### Step 6
 
 Aggiungi un titolo e una descrizione alla pull request, che permetta di capire cosa stai andando ad aggiungere/modificare
 
 ### Step 7
+
+Nella schermata successiva premi "create pull request" in alto a destra
+
+### Step 8
 
 Attendi che uno dei maintainer approvi la richiesta e a quel punto il tuo contenuto verrà pubblicato!
 
@@ -54,7 +58,7 @@ puoi utilizzare questi 2 semplicissimi metodi:
 
 # 📋 To-Do List
 
-- https://docs.google.com/document/d/1MQOMpzxx-n7lJvnBu1pJALk9lk2u-YOjz6eIPtxyi4Q/edit#heading=h.lmsq8n3ejmb7
+- https://www.reddit.com/r/ItaliaPersonalFinance/comments/185cw22/post_informativo_gli_investimenti_privati/
 
 ## ✨ Idee da realizzare
 
