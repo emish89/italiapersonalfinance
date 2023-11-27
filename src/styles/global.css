@@ -222,6 +222,11 @@ html {
   background-color: aliceblue;
 }
 
+.github-dark .line {
+  color: white;
+  font-style: italic;
+}
+
 html.dark {
   background-color: #0d0950;
   color: #fff;
