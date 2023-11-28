@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help improve https://italia-personal-finance.netlify.app/
+about: Create a report to help improve https://www.italiapersonalfinance.it/
 title: ''
 labels: bug
 assignees: emish89

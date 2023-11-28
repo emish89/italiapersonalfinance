@@ -15,6 +15,6 @@ export async function GET(context) {
       link: `/blog/${post.slug}/`,
     })),
     customData: '<language>it-it</language>',
-    canonicalUrl: 'https://italia-personal-finance.netlify.app/',
+    canonicalUrl: 'https://www.italiapersonalfinance.it/',
   });
 }

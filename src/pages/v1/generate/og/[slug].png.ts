@@ -33,7 +33,7 @@ export const GET: APIRoute = async ({ params, props }) => {
             <p style="font-size: 48px;">IPF</p>
             <p style="font-size: 38px;">${title}</p>
           </div>
-          <img src="https://italia-personal-finance.netlify.app/ipf.jpg" width="200px" height="200px" style="border: 3px solid black; border-radius: 0.5rem;" />
+          <img src="https://www.italiapersonalfinance.it/ipf.jpg" width="200px" height="200px" style="border: 3px solid black; border-radius: 0.5rem;" />
         </div>
         <div style="display: flex;">
           <p style="font-size: 24px;">${description}</p>

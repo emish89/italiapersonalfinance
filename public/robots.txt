@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
-Host: https://italia-personal-finance.netlify.app
-Sitemap: https://italia-personal-finance.netlify.app/sitemap-index.xml
+Host: https://www.italiapersonalfinance.it/
+Sitemap: https://www.italiapersonalfinance.it/sitemap-index.xml

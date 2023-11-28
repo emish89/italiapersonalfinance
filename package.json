@@ -7,7 +7,7 @@
     "name": "emish89",
     "url": "https://github.com/emish89"
   },
-  "homepage": "https://italia-personal-finance.netlify.app/",
+  "homepage": "https://www.italiapersonalfinance.it/",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

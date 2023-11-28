@@ -11,7 +11,7 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   // used to generate images
-  site: 'https://italia-personal-finance.netlify.app/',
+  site: 'https://www.italiapersonalfinance.it/',
   trailingSlash: 'ignore',
   integrations: [sitemap(), UnoCSS({
     injectReset: true
