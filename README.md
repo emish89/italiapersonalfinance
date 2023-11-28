@@ -58,8 +58,6 @@ puoi utilizzare questi 2 semplicissimi metodi:
 
 # 📋 To-Do List
 
-- https://www.reddit.com/r/ItaliaPersonalFinance/comments/185cw22/post_informativo_gli_investimenti_privati/
-
 ## ✨ Idee da realizzare
 
 - Approfondimento [tassazione](src/content/blog/taxation.mdx):
