@@ -8,6 +8,22 @@ Di seguito le istruzioni per aggiungere o modificare un contenuto anche se non a
 
 In caso di problemi aprite una "issue" dal menu apposito e cercheremo di aiutarvi.
 
+## 📋 To-Do List
+
+### ✨ Idee da realizzare
+
+- file excel di esempio per budgeting e tracking investimenti
+
+- Approfondimento [tassazione](src/content/blog/taxation.mdx)
+
+- Differenza tra redditi da capitali e diversi
+
+### 💼 In corso di realizzazione
+
+- Theme switcher
+
+- Arricchimento pagina articoli esistenti (open to ideas)
+
 ## 🔨 Vuoi contribuire scrivendo o modificando un articolo?
 
 Puoi farlo direttamente anche da Github, tutti gli articoli sono nella cartella `src/content/blog` e sono in markdown,
@@ -55,18 +71,6 @@ puoi utilizzare questi 2 semplicissimi metodi:
 - [Clicca qui per aggiungere un articolo](https://github.com/emish89/italiapersonalfinance/issues/new?assignees=emish89&labels=article&projects=&template=new_article.md&title=)
 
 - [Clicca qui per segnalare un post da aggiungere](https://github.com/emish89/italiapersonalfinance/issues/new?assignees=emish89&labels=post&projects=&template=post_to_article.md&title=)
-
-# 📋 To-Do List
-
-## ✨ Idee da realizzare
-
-- Approfondimento [tassazione](src/content/blog/taxation.mdx):
-- Differenza tra redditi da capitali e diversi;
-
-## 💼 In corso di realizzazione
-
-- Theme switcher
-- Arricchimento articoli esistenti
 
 # 🪒 Technical part
 

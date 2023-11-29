@@ -33,21 +33,16 @@ const availableTags = Array.from(tags).map((tag) => {
     <MobileSocials />
     <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
       <div class='col-span-4'>
-        <Card color='#fb923c'>
+        <Card color='#facc15'>
           <div class='flex flex-col justify-between items-start gap-4'>
             <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
-              Italia Personal Finance
+              La Wiki di IPF
             </p>
             <p class='mt-2 outfit text-xl md:text-3xl lg:text-5xl'>
-              Il sito della community Reddit di personal finance più famosa
-              d'Italia
+              La Wiki di Italia Personal Finance contiene il materiale base per
+              iniziare ad approcciare la finanza personale e l'investimento.
             </p>
-            <Button
-              target={'_self'}
-              href='https://www.reddit.com/r/ItaliaPersonalFinance/'
-            >
-              Scopri su Reddit
-            </Button>
+            <Button target={'_self'} href='/blog/wiki'>Vai alla Wiki</Button>
           </div>
         </Card>
       </div>
@@ -76,15 +71,20 @@ const availableTags = Array.from(tags).map((tag) => {
         </Card>
       </div>
       <div class='col-span-2'>
-        <Card color='#facc15'>
+        <Card color='#fb923c'>
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
-            La Wiki di IPF
+            Italia Personal Finance
           </h2>
           <p class='poppins'>
-            La pagina Wiki di Italia Personal Finance contiene il materiale base
-            per iniziare ad approcciare la finanza personale e l'investimento.
+            Il sito della community Reddit di personal finance più famosa
+            d'Italia
           </p>
-          <Button target={'_self'} href='/blog/wiki'>Vai alla Wiki</Button>
+          <Button
+            target={'_self'}
+            href='https://www.reddit.com/r/ItaliaPersonalFinance/'
+          >
+            Scopri su Reddit
+          </Button>
         </Card>
       </div>
     </section>
