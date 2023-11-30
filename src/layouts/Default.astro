@@ -27,10 +27,9 @@ const publishedTime = pubDate ? new Date(pubDate) : new Date();
 
 <html lang='en' class='h-full'>
   <!-- head -->
-  <script
-    type='text/partytown'
-    src='https://www.googletagmanager.com/gtag/js?id=G-8JYHCBXQZ5'></script>
-  <script type='text/partytown'>
+  <script async src='https://www.googletagmanager.com/gtag/js?id=G-8JYHCBXQZ5'
+  ></script>
+  <script is:inline>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
       dataLayer.push(arguments);
