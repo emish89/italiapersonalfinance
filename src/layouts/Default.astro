@@ -37,6 +37,16 @@ const publishedTime = pubDate ? new Date(pubDate) : new Date();
     gtag('js', new Date());
     gtag('config', 'G-8JYHCBXQZ5');
   </script>
+  <script>
+    //every external link opens in a new tab
+    const links = document.body?.getElementsByTagName('a');
+    const linkCount = links?.length;
+    for (let i = 0; i < linkCount; i++) {
+      if (new URL(links[i].href).origin !== location.origin) {
+        links[i].setAttribute('target', '_blank');
+      }
+    }
+  </script>
   <!-- more head -->
   <BaseHead
     ogImage={ogImage}
