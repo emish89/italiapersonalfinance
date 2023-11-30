@@ -158,7 +158,7 @@ All the suggestions in terms of wiki content are really appreciated. You can cre
 The information provided on this wiki is for general informational purposes only. It is not intended as, and should not be considered, financial advice. We strongly recommend that you consult with a qualified financial advisor or professional before making any financial decisions.
 
 Accuracy and Completeness:
-While we strive to provide accurate and up-to-date information, thi wiki makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the information provided. Any reliance you place on such information is therefore strictly at your own risk.
+While we strive to provide accurate and up-to-date information, this wiki makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the information provided. Any reliance you place on such information is therefore strictly at your own risk.
 
 Investment Risks:
 Investing in financial markets involves risk, and past performance is not indicative of future results. The value of investments may fluctuate, and investors may lose their entire investment. The wiki is not responsible for any financial loss or damage that may arise from your use of the information provided.
