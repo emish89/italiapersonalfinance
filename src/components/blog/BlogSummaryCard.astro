@@ -11,7 +11,7 @@ interface Props {
 const { post } = Astro.props;
 ---
 
-<a href={`/blog/${post.slug}/`}>
+<a aria-label={post.data.title} href={`/blog/${post.slug}/`}>
   <SummaryCard
     title={post.data.title}
     imgAlt={post.data.title}
@@ -19,7 +19,9 @@ const { post } = Astro.props;
     description={post.data.description}
   >
     <div class='flex justify-end my-4'>
-      <Button href={`/blog/${post.slug}/`}>Leggi l'articolo &rarr;</Button>
+      <Button aria-label={post.data.title} href={`/blog/${post.slug}/`}>
+        Leggi l'articolo &rarr;
+      </Button>
     </div>
 
     <div class='hidden sm:inline-block'>
