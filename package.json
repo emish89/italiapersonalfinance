@@ -22,9 +22,9 @@
     "@astrojs/rss": "3.0.0",
     "@astrojs/sitemap": "3.0.3",
     "@eliancodes/brutal-ui": "0.2.2",
-    "@types/react": "18.2.39",
+    "@types/react": "18.2.41",
     "@types/react-dom": "18.2.17",
-    "@unocss/astro": "0.57.7",
+    "@unocss/astro": "0.58.0",
     "astro": "3.6.4",
     "fuse.js": "7.0.0",
     "mdast-util-to-string": "4.0.0",
@@ -41,8 +41,8 @@
     "@resvg/resvg-js": "2.6.0",
     "@typescript-eslint/eslint-plugin": "6.13.1",
     "@typescript-eslint/parser": "6.13.1",
-    "@unocss/reset": "0.57.7",
-    "eslint": "8.54.0",
+    "@unocss/reset": "0.58.0",
+    "eslint": "8.55.0",
     "eslint-plugin-astro": "0.30.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-react": "7.33.2",
@@ -50,6 +50,6 @@
     "prettier-config-standard": "7.0.0",
     "prettier-plugin-astro": "0.12.2",
     "sharp": "0.33.0",
-    "unocss": "0.57.7"
+    "unocss": "0.58.0"
   }
 }
