@@ -25,9 +25,6 @@ export default defineConfig({
     }),
     */
   ],
-  experimental: {
-    devOverlay: true
-  },
   vite: {
     optimizeDeps: {
       exclude: ['@resvg/resvg-js']
