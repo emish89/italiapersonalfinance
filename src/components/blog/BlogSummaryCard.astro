@@ -11,43 +11,42 @@ interface Props {
 const { post } = Astro.props;
 ---
 
-<a aria-label={post.data.title} href={`/blog/${post.slug}/`}>
-  <SummaryCard
-    title={post.data.title}
-    imgAlt={post.data.title}
-    imgSrc={post.data.imgUrl}
-    description={post.data.description}
-  >
-    <div class='flex justify-end my-4'>
-      <Button aria-label={post.data.title} href={`/blog/${post.slug}/`}>
-        Leggi l'articolo &rarr;
-      </Button>
-    </div>
+<SummaryCard
+  title={post.data.title}
+  imgAlt={post.data.title}
+  imgSrc={post.data.imgUrl}
+  description={post.data.description}
+  cardLink={`/blog/${post.slug}/`}
+>
+  <div class='flex justify-end my-4'>
+    <Button aria-label={post.data.title} href={`/blog/${post.slug}/`}>
+      Leggi l'articolo &rarr;
+    </Button>
+  </div>
 
-    <div class='hidden sm:inline-block'>
-      <p class='poppins mt-2'>tags:</p>
-      <div class='flex justify-between items-center'>
-        <ul class='flex flex-wrap gap-4 mt-2'>
-          {
-            post.data.tags.map((tag) => {
-              return (
-                <li>
-                  <a class='sanchez' href={`/blog/tags/${tag.toLowerCase()}/`}>
-                    <Pill>{tag}</Pill>
-                  </a>
-                </li>
-              );
-            })
-          }
-        </ul>
+  <div class='hidden sm:inline-block'>
+    <p class='poppins mt-2'>tags:</p>
+    <div class='flex justify-between items-center'>
+      <ul class='flex flex-wrap gap-4 mt-2'>
         {
-          post.data.draft && (
-            <span class='bg-green rounded-full border-2 py-1 px-4 text-sm border-black card-shadow'>
-              Draft
-            </span>
-          )
+          post.data.tags.map((tag) => {
+            return (
+              <li>
+                <a class='sanchez' href={`/blog/tags/${tag.toLowerCase()}/`}>
+                  <Pill>{tag}</Pill>
+                </a>
+              </li>
+            );
+          })
         }
-      </div>
+      </ul>
+      {
+        post.data.draft && (
+          <span class='bg-green rounded-full border-2 py-1 px-4 text-sm border-black card-shadow'>
+            Draft
+          </span>
+        )
+      }
     </div>
-  </SummaryCard>
-</a>
+  </div>
+</SummaryCard>
