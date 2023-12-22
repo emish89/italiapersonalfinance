@@ -26,18 +26,22 @@ const pubDate = new Date(content.pubDate).toLocaleString('it', timeFormat);
   >
   <p class='text-slate text-sm md:text-base'>
     Ultimo aggiornamento: {lastModifiedDate} - Autore: <a
-      href={'https://www.reddit.com/' + content.author}>{content.author}</a
+      href={`https://www.reddit.com/${content.author}`}>{content.author}</a
     >
   </p>
   <p class='text-slate italic text-sm md:text-base pb-12'>
-    Tempo di lettura: {Math.round(content.minutesRead)} minuti
+    Tempo di lettura: {
+      Math.round(content.minutesRead) !== 1
+        ? `${Math.round(content.minutesRead)} minuti`
+        : `${Math.round(content.minutesRead)} minuto`
+    }
   </p>
   <slot />
   <p class='text-slate pt-24'>
-    Scritto da: <a href={'https://www.reddit.com/' + content.author}
+    Scritto da: <a href={`https://www.reddit.com/${content.author}`}
       >{content.author}</a
     > - Ultima revisione: <a
-      href={'https://www.reddit.com/' + content.lastReviewer}
+      href={`https://www.reddit.com/${content.lastReviewer}`}
       >{content.lastReviewer}</a
     >
   </p>
