@@ -16,16 +16,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "2.0.2",
-    "@astrojs/partytown": "2.0.2",
-    "@astrojs/react": "3.0.8",
+    "@astrojs/mdx": "2.0.3",
+    "@astrojs/partytown": "2.0.3",
+    "@astrojs/react": "3.0.9",
     "@astrojs/rss": "4.0.1",
-    "@astrojs/sitemap": "3.0.3",
+    "@astrojs/sitemap": "3.0.4",
     "@eliancodes/brutal-ui": "0.2.3",
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.18",
-    "@unocss/astro": "0.58.0",
-    "astro": "4.0.7",
+    "@unocss/astro": "0.58.1",
+    "astro": "4.0.8",
     "fuse.js": "7.0.0",
     "mdast-util-to-string": "4.0.0",
     "minisearch": "6.3.0",
@@ -36,20 +36,20 @@
     "satori-html": "0.3.2"
   },
   "devDependencies": {
-    "@iconify-json/logos": "1.1.41",
+    "@iconify-json/logos": "1.1.42",
     "@iconify-json/uil": "1.1.8",
     "@resvg/resvg-js": "2.6.0",
-    "@typescript-eslint/eslint-plugin": "6.15.0",
-    "@typescript-eslint/parser": "6.15.0",
-    "@unocss/reset": "0.58.0",
+    "@typescript-eslint/eslint-plugin": "6.16.0",
+    "@typescript-eslint/parser": "6.16.0",
+    "@unocss/reset": "0.58.1",
     "eslint": "8.56.0",
     "eslint-plugin-astro": "0.31.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-react": "7.33.2",
     "prettier": "3.1.1",
     "prettier-config-standard": "7.0.0",
-    "prettier-plugin-astro": "0.12.2",
+    "prettier-plugin-astro": "0.12.3",
     "sharp": "0.33.1",
-    "unocss": "0.58.0"
+    "unocss": "0.58.1"
   }
 }
