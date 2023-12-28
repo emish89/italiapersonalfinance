@@ -1,0 +1,126 @@
+---
+title: La duration e la convessità delle obbligazioni
+pubDate: 2023-12-28 18:52
+author: 'u/Ab-Urbe-Condita'
+tags:
+  - Wiki IPF
+  - Investimenti
+imgUrl: '../../assets/bond.jpg'
+description: Come funziona la duration di una obbligazione? La convessità? Come influenzano il prezzo? Lo scopriamo in questo articolo.
+layout: '../../layouts/BlogPost.astro'
+slug: duration-obbligazioni
+lastReviewer: 'u/emish89'
+---
+
+# La duration delle obbligazioni
+
+## INTRODUZIONE
+
+Direttamente da [qui](https://www.reddit.com/r/ItaliaPersonalFinance/comments/18ql3eh/ipf_educational_la_duration_e_la_convessit%C3%A0_di_un/)
+
+
+Proseguiamo la nostra serie sui bond spiegando bene come si comporta veramente il prezzo di un bond al variare del suo rendimento. 
+Se vi siete persi il post di ieri dove vediamo il corretto uso della duration potete recuperarlo 
+[**QUI**](https://www.reddit.com/r/ItaliaPersonalFinance/comments/18pd37t/molti_hanno_frainteso_cosa_sia_la_duration_di_un/).
+
+Abbiamo ormai capito che il prezzo e il rendimento di un bond sono inversamente proporzionali: 
+se il prezzo di un bond a tasso fisso sale vuol dire che il suo rendimento scende, e viceversa.
+
+## Come varia realmente il prezzo di un bond al variare del suo rendimento?
+
+Prezzo e rendimento sono due grandezze inversamente proporzionali. 
+Quindi la relazione grafica tra prezzo e rendimento sarà un retta come quella sotto, corretto? \[Figura 1\]
+
+![Figura 1](https://preview.redd.it/b7qg7yg7og8c1.png?width=846&format=png&auto=webp&s=6bad318ee604185a0082283c7cd8e3c7ac147a43)
+
+No, la relazione tra prezzo e rendimento NON è lineare. Il comportamento di un bond è in realtà ***convesso***. 
+Questo significa che il prezzo si sposta a velocità diverse a seconda della direzione del movimento del rendimento \[Figura 2\]. 
+In un bond a tasso fisso, man mano che il rendimento sale il prezzo scende sempre più lentamente, 
+man mano che il rendimento scende il prezzo sale sempre più velocemente.
+
+![Figura 2](https://preview.redd.it/xbs1sju9og8c1.png?width=775&format=png&auto=webp&s=10e3ec6e0683510ce171a30a77a351325402d085)
+
+Per aiutarci con la stima di quanto si muoverà un bond al variare del suo rendimento possiamo usare la cosiddetta *duration*. 
+La duration è un numero che essenzialmente indica il tempo che il bond impiegherà a ripagare, attraverso le sue cedole, 
+il capitale investito inizialmente (il principal del bond). 
+La duration **inoltre indica quanto il prezzo del bond si muoverà a seguito della variazione di un punto percentuale del suo rendimento.**
+
+La duration, fissato un certo rendimento, non è altro che la **retta tangente** alla curva di prezzo ad uno specifico rendimento. 
+Per chi ha fatto almeno la quinta superiore, possiamo anche dire che la duration è la derivata prima della curva di prezzo. \[Figura 3\]
+
+La duration è dunque una relazione che non è valida ovunque sulla curva, ma solo *localmente* per ogni specifico livello di rendimento. 
+In *Figura 3* è visualizzato questo fenomeno: usando la semplice duration (la retta arancione tangente alla curva), 
+notiamo che si ha una buona approssimazione della variazione di prezzo solo per piccoli movimenti del rendimento. 
+Tuttavia, più ci si sposta a destra o a sinistra, più la stima data dalla duration diventa errata. 
+Più precisamente, **più i rendimenti scendono più la duration sottostima la risalita di prezzo, più i rendimenti salgono più la duration sovrastima la perdita.**
+
+
+![Figura 3 - La relazione Prezzo-Rendimento non è lineare, ma convessa. La duration è la derivata prima della curva e approssima bene il prezzo del bond solo localmente.](https://preview.redd.it/ijh2pyucog8c1.png?width=772&format=png&auto=webp&s=f88f0f92ccf6786d1a59cd744edccf8f2412a55f)
+
+
+La convessità di un bond ci insegna quindi che la duration ha una abilità limitata nel fare previsioni di prezzo accurate 
+ed è un fattore spesso trascurato ma in alcuni casi molto impattante, come vediamo di seguito.
+
+La convessità, infatti, causa sempre **asimmetria nel movimento del prezzo** del bond, 
+traducendosi in una minore sensibilità al prezzo in caso di rendimenti al rialzo, e in una maggiore sensibilità in caso di tassi al ribasso. 
+In altre parole, possiamo dire che la duration si accorcia sempre di più via via che il prezzo del bond scende. Quindi tutti i bond a tasso fisso, 
+oltre un certo rendimento, raggiungono un plateau di prezzo che è tanto più resistente quanto più il rendimento sale.
+
+Questa caratteristica è sfruttabile a proprio favore in alcuni particolari casi, come nel caso dei bond a lunghissima scadenza.
+
+## Il crollo storico dei bond ultra lunghi
+
+La convessità di un bond aumenta con l'aumentare della sua maturity, 
+poiché i cashflow che il titolo promette sono dilazionati su un tempo più lungo 
+e di conseguenza la variazione di prezzo è accentuata anche per piccoli movimenti del rendimento. 
+La convessità aumenta inoltre con la diminuzione della cedola, 
+poiché in un bond a cedola bassa il rimborso del capitale a scadenza pesa maggiormente sul ritorno totale 
+e influenza maggiormente il movimento del prezzo del titolo a seguito di un cambio delle condizioni di mercato.
+
+L’elevata convessità dei bond ultralunghi a cedola bassa, unita allo storico inasprimento monetario dello scorso anno, 
+hanno causato perdite enormi a questi titoli. 
+Uno dei casi più eclatanti è quello dei *centenari austriaci™* come *Austria 2117 2.1%* \- 
+un bond sovrano centenario che ha perso il 74% dai massimi del 2020 \[*Figura 4*\].
+
+![Figura 4 - L’andamento di Austria 2117 negli ultimi 4 anni, messo a confronto con tasso di Inflazione EU YoY, Tasso BCE \(main\) e Asset detenuti dalla BCE.](https://preview.redd.it/b8nkjtskog8c1.png?width=836&format=png&auto=webp&s=12c951db583d88660a11c6f08b94df9ab694aefb)
+
+Sempre prendendo come esempio il centenario austriaco, in *Figura 5* è mostrata la sua completa curva prezzo-rendimento 
+unita al potenziale gain o perdita rispetto ai prezzi che aveva a inizio Novembre, usando livelli di rendimento fissi (da 0% a 8%). 
+Notate subito come l’elevata convessità implichi un **movimento di prezzo fortemente asimmetrico**, 
+marcatamente più elevato in caso di discesa del rendimento piuttosto che in una sua risalita.
+
+![Figura 5](https://preview.redd.it/rjfe0hrrog8c1.png?width=2554&format=png&auto=webp&s=71c63e5cf206c6dce5be1437b39143e31e5405df)
+
+Questa caratteristica è stata di grande interesse per quegli investitori che, 
+alla luce di una normalizzazione dell’inflazione e della fine del generale pessimismo sui titoli a lunga scadenza, 
+volevano speculare su una futura discesa dei rendimenti della parte lunga della curva. 
+Un trade che ha offerto una certa protezione da ulteriori ribassi di prezzo e una sorta di “effetto leva” al rialzo.
+
+Ora che abbiamo imparato cosa sia la convessità, la community si merita un regalo:
+
+A questo [**LINK**](https://mega.nz/file/hZpm1BhT#tbhxataSSi5SUXkiHQgPdzT4tRAYo1kmjGu89wygDrg) 
+potete scaricare un file Excel che vi permette di visualizzare la curva prezzo-rendimento e la convessità di qualsiasi bond a tasso fisso. 
+È sufficiente inserire il dati essenziali del bond nel foglio Emissioni e il prezzo e la data di acquisto nel foglio Simulatore. 
+Il foglio calcolerà automaticamente la curva e simulerà quanto guadagnerete/perderete a seguito di una certa variazione del rendimento.
+
+![Simulatore convessità in regalo](https://preview.redd.it/v20nxl3yog8c1.png?width=903&format=png&auto=webp&s=3dd193e37024c8fc0d8a54ffe49cb1c42d7cbdf1)
+
+È un file che ha origine da un simulatore di BTP dei ragazzi del Forum di Finanza Online, a cui ho aggiunto il simulatore della convessità. 
+Un grazie a chi ha gentilmente offerto il foglio originale, senza il quale tutto il resto non sarebbe stato possibile.
+
+
+## CONCLUSIONI
+
+Se volete leggere la mini guida sulle obbligazioni:
+<a href='/blog/obbligazioni'>
+    <button className='brutal-btn p-4 sanchez' name='button'>
+          <span>Le obbligazioni</span>
+    </button>
+</a>
+
+Se invece volete approfondire il rapporto prezzi e tassi delle obbligazioni, lo trovate qui:
+<a href='/blog/tassi-e-prezzi-obbligazioni'>
+    <button className='brutal-btn p-4 sanchez' name='button'>
+          <span>Tassi e prezzi delle obbligazioni</span>
+    </button>
+</a>
