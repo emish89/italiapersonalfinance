@@ -25,7 +25,7 @@
     "@types/react": "18.2.46",
     "@types/react-dom": "18.2.18",
     "@unocss/astro": "0.58.3",
-    "astro": "4.0.8",
+    "astro": "4.0.9",
     "fuse.js": "7.0.0",
     "mdast-util-to-string": "4.0.0",
     "minisearch": "6.3.0",
