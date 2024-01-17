@@ -59,6 +59,6 @@ const publishedTime = pubDate ? new Date(pubDate) : new Date();
   <body class:list={[classList]}>
     <BaseNavigation {pageTitle} />
     <slot />
-    <BaseFooter />
+    <BaseFooter backToTop />
   </body>
 </html>
