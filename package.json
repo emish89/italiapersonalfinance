@@ -20,7 +20,7 @@
     "@astrojs/partytown": "2.0.4",
     "@astrojs/react": "3.0.9",
     "@astrojs/rss": "4.0.2",
-    "@astrojs/sitemap": "3.0.4",
+    "@astrojs/sitemap": "3.0.5",
     "@eliancodes/brutal-ui": "0.2.3",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
