@@ -6,6 +6,7 @@ import { Pill } from '@eliancodes/brutal-ui';
 import { Button } from '@eliancodes/brutal-ui';
 import { getCollection } from 'astro:content';
 import Card from '@components/generic/Card.astro';
+import TWSlider from '@components/home/TWSlider.astro';
 
 const allPosts = await getCollection('blog');
 
@@ -30,6 +31,7 @@ const availableTags = Array.from(tags).map((tag) => {
   description='Wiki page di Italia Personal Finance | Italia Personal Finance è una community di persone che condividono la passione per la finanza personale e l’investimento.'
 >
   <main class='bg-pink-200 p-6'>
+    <TWSlider />
     <MobileSocials />
     <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
       <div class='col-span-4'>
