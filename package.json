@@ -49,7 +49,7 @@
     "eslint-plugin-react": "7.33.2",
     "prettier": "3.2.4",
     "prettier-config-standard": "7.0.0",
-    "prettier-plugin-astro": "0.12.3",
+    "prettier-plugin-astro": "0.13.0",
     "sharp": "0.33.2",
     "unocss": "0.58.3"
   }
