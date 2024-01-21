@@ -26,7 +26,7 @@
     "@types/react-dom": "18.2.18",
     "@unocss/astro": "0.58.3",
     "astro": "4.2.1",
-    "astro-font": "0.0.76",
+    "astro-font": "0.0.77",
     "fuse.js": "7.0.0",
     "mdast-util-to-string": "4.0.0",
     "minisearch": "6.3.0",
@@ -49,7 +49,7 @@
     "eslint-plugin-react": "7.33.2",
     "prettier": "3.2.4",
     "prettier-config-standard": "7.0.0",
-    "prettier-plugin-astro": "0.12.3",
+    "prettier-plugin-astro": "0.13.0",
     "sharp": "0.33.2",
     "unocss": "0.58.3"
   }
