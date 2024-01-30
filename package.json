@@ -33,7 +33,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "reading-time": "1.5.0",
-    "satori": "0.10.11",
+    "satori": "0.10.13",
     "satori-html": "0.3.2"
   },
   "devDependencies": {
