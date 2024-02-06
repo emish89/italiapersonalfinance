@@ -26,13 +26,11 @@ const Search = ({ searchList }: { searchList: Record<string, any>[] }) => {
             id='search'
             value={query}
             onChange={handleOnSearch}
-            className='block w-full p-4 pl-10 text-sm 
+            className='block w-full p-4 pl-10 
                                 text-gray-900 
                                border-2	border-black
                                rounded-full bg-white
                                drop-shadow-custom-1
-                               focus:outline-none
-                               focus:drop-shadow-custom-2
                                sanchez'
             placeholder='Cerca nella wiki e nel blog'
           />
