@@ -18,7 +18,7 @@
   "dependencies": {
     "@astrojs/mdx": "2.1.1",
     "@astrojs/partytown": "2.0.4",
-    "@astrojs/react": "3.0.9",
+    "@astrojs/react": "3.0.10",
     "@astrojs/rss": "4.0.5",
     "@astrojs/sitemap": "3.0.5",
     "@eliancodes/brutal-ui": "0.2.3",
