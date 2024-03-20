@@ -44,7 +44,7 @@
     "@typescript-eslint/parser": "7.3.0",
     "@unocss/reset": "0.58.6",
     "eslint": "8.57.0",
-    "eslint-plugin-astro": "0.31.4",
+    "eslint-plugin-astro": "0.32.0",
     "eslint-plugin-jsx-a11y": "6.8.0",
     "eslint-plugin-react": "7.34.1",
     "prettier": "3.2.5",
