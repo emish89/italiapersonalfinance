@@ -164,3 +164,6 @@ Investment Risks:
 Investing in financial markets involves risk, and past performance is not indicative of future results. The value of investments may fluctuate, and investors may lose their entire investment. The wiki is not responsible for any financial loss or damage that may arise from your use of the information provided.
 
 If you have any questions about this disclaimer or the information on this wiki, please contact us through Github.
+
+
+![Alt](https://repobeats.axiom.co/api/embed/5d01a4e83f2626e1beb0b9d7c0331daf224e13b0.svg "Repobeats analytics image")
