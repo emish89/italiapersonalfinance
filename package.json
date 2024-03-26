@@ -39,7 +39,7 @@
   "devDependencies": {
     "@iconify-json/logos": "1.1.42",
     "@iconify-json/uil": "1.1.8",
-    "@resvg/resvg-js": "2.6.0",
+    "@resvg/resvg-js": "2.6.2",
     "@typescript-eslint/eslint-plugin": "7.3.1",
     "@typescript-eslint/parser": "7.3.1",
     "@unocss/reset": "0.58.6",
