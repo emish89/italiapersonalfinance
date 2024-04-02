@@ -22,7 +22,7 @@
     "@astrojs/rss": "4.0.5",
     "@astrojs/sitemap": "3.1.2",
     "@eliancodes/brutal-ui": "0.2.6",
-    "@types/react": "18.2.73",
+    "@types/react": "18.2.74",
     "@types/react-dom": "18.2.23",
     "@unocss/astro": "0.58.9",
     "astro": "4.5.13",
