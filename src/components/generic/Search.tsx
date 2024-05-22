@@ -2,7 +2,7 @@ import { useState } from 'react';
 import MiniSearch from 'minisearch';
 
 const Search = ({ searchList }: { searchList: Record<string, any>[] }) => {
-  let miniSearch = new MiniSearch({
+  const miniSearch = new MiniSearch({
     fields: ['slug', 'data.title', 'body'], // fields to index for full-text search
     storeFields: ['data', 'slug'], // fields to return with search results
   });
