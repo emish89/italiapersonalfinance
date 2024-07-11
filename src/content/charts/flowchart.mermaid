@@ -1,0 +1,41 @@
+flowchart LR
+    subgraph E[4 - Investimenti a lungo termine]
+    direction TB
+    stepE1
+    end
+    subgraph D[3 - Investimenti a medio termine]
+    direction TB
+    stepD1
+    end
+    subgraph C[2- Investimenti a breve termine/liquidi]
+    direction TB
+    stepC1
+    end
+    
+    subgraph B[1 - Fondo Emergenza]
+    direction TB
+    stepB1("`Valuta tutti i debiti ad alto tasso di interesse, cioè con tasso di interesse maggiore di €STR, che hai contratto`")
+    -->
+    stepB2("`Accumula i risparmi fino ad avere un **Fondo di emergenza** di 3-6 mesi di spese, in modo da essere tranquillo negli imprevisti`")
+    stepB3("`TODO fondo pensione negoziale, paga debiti, pensa ad eventuali assicurazioni base`")
+    end
+    subgraph A[0 - Sopravvivenza]
+    direction TB
+    stepA1[Start]
+    -->
+    stepA2("`L'obiettivo è creare un **cashflow positivo**, quindi avere ingressi mensili superiori alle spese`")
+    -->
+    stepA3("`**Inizia a tracciare le spese** #13;#13;E' importante sapere dove stanno andando i soldi che escono`")
+    -->
+    stepA4("`Cerca di iniziare a capire se le spese sono ottimizzabili (o se puoi aumentare le entrate)`")
+    -->
+    |Opzionale| optA5("`Crea un piccolo fondo con 1 mese di spese`") --> stepA6
+    stepA4-->stepA6
+    stepA6("`Quando arrivi qui vuol dire che riesci a sopravvivere e puoi pensare agli step successivi.`")
+    
+    end
+
+    A-->B
+    B-->C
+    C-->D
+    D-->E
