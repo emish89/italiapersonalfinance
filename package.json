@@ -50,7 +50,7 @@
     "globals": "^15.8.0",
     "prettier": "3.3.3",
     "prettier-config-standard": "7.0.0",
-    "prettier-plugin-astro": "0.14.0",
+    "prettier-plugin-astro": "0.14.1",
     "sharp": "0.33.4",
     "unocss": "0.61.4"
   },
