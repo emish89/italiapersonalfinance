@@ -37,7 +37,7 @@
     "satori-html": "0.3.2"
   },
   "devDependencies": {
-    "@iconify-json/logos": "1.1.43",
+    "@iconify-json/logos": "1.1.44",
     "@iconify-json/uil": "1.1.8",
     "@resvg/resvg-js": "2.6.2",
     "@typescript-eslint/eslint-plugin": "7.16.1",
