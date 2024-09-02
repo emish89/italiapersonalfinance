@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@iconify-json/logos": "1.2.0",
-    "@iconify-json/uil": "1.1.9",
+    "@iconify-json/uil": "1.2.0",
     "@resvg/resvg-js": "2.6.2",
     "@typescript-eslint/eslint-plugin": "8.3.0",
     "@typescript-eslint/parser": "8.3.0",
