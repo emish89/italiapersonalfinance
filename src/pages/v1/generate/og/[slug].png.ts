@@ -1,5 +1,4 @@
 import { Resvg, type ResvgRenderOptions } from '@resvg/resvg-js';
-import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import satori from 'satori';
 import { html as toReactElement } from 'satori-html';
@@ -21,7 +20,7 @@ export function getStaticPaths() {
   }));
 }
 
-export const GET: APIRoute = async ({ props }: any) => {
+export const GET = async ({ props }: any) => {
   const title = props.title.trim() ?? 'Blogpost';
   const description = props.description ?? null;
   const html = toReactElement(`
