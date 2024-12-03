@@ -49,8 +49,8 @@ const Search = ({ searchList }: { searchList: Record<string, any>[] }) => {
       <ul className='list-none'>
         {posts &&
           posts.map((post) => (
-            <li className='py-2 brutal-card poppins' key={post?.slug}>
-              <a href={`/blog/${post.slug}`}>
+            <li className='py-2 brutal-card poppins' key={post?.id}>
+              <a href={`/blog/${post.id}`}>
                 <p className='text-lg md:text-xl hover:underline underline-offset-2'>
                   {post.data.title}
                 </p>

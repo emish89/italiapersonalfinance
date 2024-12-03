@@ -7,8 +7,15 @@ import Comments from '@components/generic/Comments.astro';
 
 const ogImage = new URL(`/v1/generate/og/${Astro.params.slug}.png`, Astro.url);
 
-const { content, headings } = Astro.props;
-const { title, description, lastModified, pubDate } = content;
+const {
+  content,
+  headings,
+  title,
+  description,
+  lastModified,
+  pubDate,
+  minutesRead,
+} = Astro.props;
 ---
 
 <Layout
@@ -19,8 +26,8 @@ const { title, description, lastModified, pubDate } = content;
   pubDate={pubDate as string}
 >
   <main class='p-6 lg:grid lg:grid-cols-3 flex justify-center'>
-    <BlogSideBar headings={headings} />
-    <BlogContent content={content}>
+    <BlogSideBar {headings} />
+    <BlogContent {content} {minutesRead} {lastModified}>
       <slot />
     </BlogContent>
   </main>

@@ -16,12 +16,12 @@ const posts = await getCollection('blog');
 
 export function getStaticPaths() {
   return posts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: post.id },
     props: { title: post.data.title, description: post.data.description },
   }));
 }
 
-export const GET: APIRoute = async ({ params, props }) => {
+export const GET: APIRoute = async ({ props }: any) => {
   const title = props.title.trim() ?? 'Blogpost';
   const description = props.description ?? null;
   const html = toReactElement(`
