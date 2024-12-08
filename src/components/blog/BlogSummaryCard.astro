@@ -16,10 +16,10 @@ const { post } = Astro.props;
   imgAlt={post.data.title}
   imgSrc={post.data.imgUrl}
   description={post.data.description}
-  cardLink={`/blog/${post.slug}/`}
+  cardLink={`/blog/${post.id}/`}
 >
   <div class='flex justify-end my-4'>
-    <Button aria-label={post.data.title} href={`/blog/${post.slug}/`}>
+    <Button aria-label={post.data.title} href={`/blog/${post.id}/`}>
       Leggi l'articolo &rarr;
     </Button>
   </div>
