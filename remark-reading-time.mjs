@@ -2,11 +2,13 @@ import getReadingTime from 'reading-time';
 import { toString } from 'mdast-util-to-string';
 
 export function remarkReadingTime() {
-  return function (tree, { data }) {
+  return function (tree, vfile) {
     const textOnPage = toString(tree);
     const readingTime = getReadingTime(textOnPage);
-    // readingTime.text will give us minutes read as a friendly string,
-    // i.e. "3 min read"
-    data.astro.frontmatter.minutesRead = readingTime.minutes;
+
+    // Add `minutesRead` to frontmatter (via VFile)
+    if (!vfile.data.astro) vfile.data.astro = {};
+    if (!vfile.data.astro.frontmatter) vfile.data.astro.frontmatter = {};
+    vfile.data.astro.frontmatter.minutesRead = readingTime.minutes;
   };
 }
