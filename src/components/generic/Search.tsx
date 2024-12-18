@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import MiniSearch from 'minisearch';
 
-const Search = ({ searchList }: { searchList: Record<string, any>[] }) => {
+const Search: React.FC<{ searchList: Record<string, any>[] }> = ({
+  searchList,
+}) => {
   const miniSearch = new MiniSearch({
     fields: ['slug', 'data.title', 'body'], // fields to index for full-text search
     storeFields: ['data', 'slug'], // fields to return with search results
@@ -39,7 +41,7 @@ const Search = ({ searchList }: { searchList: Record<string, any>[] }) => {
         </div>
       </div>
 
-      {query.length > 1 && (
+      {query?.length > 1 && (
         <div className='my-4'>
           {posts.length === 1 ? 'Trovato' : 'Trovati'} {posts.length}{' '}
           {posts.length === 1 ? 'risultato' : 'risultati'} per '{query}'
@@ -49,8 +51,8 @@ const Search = ({ searchList }: { searchList: Record<string, any>[] }) => {
       <ul className='list-none'>
         {posts &&
           posts.map((post) => (
-            <li className='py-2 brutal-card poppins' key={post?.slug}>
-              <a href={`/blog/${post.slug}`}>
+            <li className='py-2 brutal-card poppins' key={post?.id}>
+              <a href={`/blog/${post.id}`}>
                 <p className='text-lg md:text-xl hover:underline underline-offset-2'>
                   {post.data.title}
                 </p>

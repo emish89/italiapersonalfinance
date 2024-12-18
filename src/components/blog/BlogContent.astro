@@ -1,9 +1,11 @@
 ---
 interface Props {
   content: any;
+  minutesRead: number;
+  lastModified: string;
 }
 
-const { content } = Astro.props;
+const { content, minutesRead, lastModified } = Astro.props;
 const timeFormat: Intl.DateTimeFormatOptions = {
   year: '2-digit',
   month: 'numeric',
@@ -13,7 +15,7 @@ const timeFormat: Intl.DateTimeFormatOptions = {
   hour12: false,
   timeZone: 'Europe/Rome',
 };
-const lastModifiedDate = new Date(content.lastModified).toLocaleString(
+const lastModifiedDate = new Date(lastModified).toLocaleString(
   'it',
   timeFormat,
 );
@@ -25,15 +27,14 @@ const pubDate = new Date(content.pubDate).toLocaleString('it', timeFormat);
     >&larr; Torna alla pagina precedente</a
   >
   <p class='text-slate text-sm md:text-base'>
-    Ultimo aggiornamento: {lastModifiedDate} - Autore: <a
-      href={`https://www.reddit.com/${content.author}`}>{content.author}</a
-    >
+    {lastModified && <>Ultimo aggiornamento: {lastModifiedDate} - </>} Autore:
+    <a href={`https://www.reddit.com/${content.author}`}>{content.author}</a>
   </p>
   <p class='text-slate italic text-sm md:text-base pb-12'>
     Tempo di lettura: {
-      Math.round(content.minutesRead) !== 1
-        ? `${Math.round(content.minutesRead)} minuti`
-        : `${Math.round(content.minutesRead)} minuto`
+      Math.round(minutesRead) !== 1
+        ? `${Math.round(minutesRead)} minuti`
+        : `${Math.round(minutesRead)} minuto`
     }
   </p>
   <slot />
