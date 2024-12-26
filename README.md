@@ -33,7 +33,7 @@ la stessa sintassi usata su Reddit (`.md` e `.mdx`).
 
 ### Step 1
 
-Vai nella cartella `src/content/blog` e seleziona l'articolo da modificare o premi "add file" in alto a destra
+Vai nella cartella `src/content/data/blog` e seleziona l'articolo da modificare o premi "add file" in alto a destra
 
 ### Step 2
 
