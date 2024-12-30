@@ -5,52 +5,61 @@ flowchart LR
     -->
     stepA2("`L'obiettivo è creare un **cashflow positivo**, quindi avere ingressi mensili superiori alle spese`")
     -->
-    stepA3("`**Inizia a tracciare le spese** #13;#13;E' importante sapere dove stanno andando i soldi che escono`")
+    stepA3("`**E' importante iniziare a tracciare le spese** #13;#13;Sapere dove stanno andando i soldi che escono è il primo passo.`")
     -->
-    stepA4("`Cerca di iniziare a capire se le spese sono ottimizzabili (o se puoi aumentare le entrate)`")
+    stepA4("`Cercare di iniziare a capire se le spese sono ottimizzabili (o se si possono aumentare le entrate) è il passo successivo`")
     -->
-    |Opzionale| optA5("`Crea un piccolo fondo con 1 mese di spese`") --> stepA6
+    |Opzionale| optA5("`Creare un piccolo fondo pari a 1 mese di spese, per una minima tranquillità`") --> stepA6
     stepA4-->stepA6
-    stepA6("`Quando arrivi qui vuol dire che riesci a sopravvivere e puoi pensare agli step successivi`")
+    stepA6("`Quando si arriva qui vuol dire che si è raggiunta la sopravvivenza finanziaria e si può pensare agli step successivi`")
     end
 
     subgraph B[1 - Tutela finanziaria]
     direction TB
-    stepB1("`Accumula i risparmi fino ad avere un **Fondo di emergenza** di 3-6 mesi di spese se sei un lavoratore dipendente con contratto stabile, o fino a 12 se sei un libero professionista, in modo da essere tranquillo negli imprevisti`")
+    stepB1("`Accumulare i risparmi fino ad avere un **Fondo di emergenza** di almeno 3 mesi di spese (fino a 12 in caso di instabilità), in modo da essere tranquilli negli imprevisti`")
     -->
-    stepB2("`Valuta la sottoscrizione di un'assicurazione per proteggere la tua casa, se quella in cui vivi è di tua proprietà, e un'assicurazione sulla vita se il tuo nucleo familiare dipende dal tuo reddito`")
+    stepB2("`Valutare di rimborsare tutti i debiti ad alto tasso di interesse, cioè con tasso di interesse maggiore di €STR. Si può iniziare da quelli a tasso di interesse più alto.`")
     -->
-    stepB3("`Valuta di rimborsare tutti i debiti ad alto tasso di interesse, cioè con tasso di interesse maggiore di €STR, che hai contratto. Inizia da quelli a tasso di interesse più alto, prosegui finché non ne hai più.`")
+    stepB3("`Se il contratto lavorativo lo prevede, aderire al fondo pensione NEGOZIALE versando il minimo per ottenere il contributo del datore di lavoro`")
     -->
-    stepB4("`Se il tuo contratto lavorativo lo prevede, aderisci al fondo pensione negoziale versando il minimo per ottenere il contributo del datore di lavoro`")
+    |Opzionale| optB5("`Valutare la sottoscrizione di un'assicurazione per proteggere la tua casa, se quella in cui si vive è di proprietà, e un'assicurazione sulla vita se il nucleo familiare dipende dal proprio reddito`")
     -->
-    |Opzionale| optB5("`Se hai una RAL >50k€ valuta di effettuare ulteriori versamenti al fondo pensione fino a raggiungere il massimo deducibile di 5.164,57€  `")
-    -->
-    stepB6("`Quando arrivi qui vuol dire che sei al sicuro da imprevisti a breve, medio e lungo termine e puoi pensare agli investimenti`")
-    stepB4-->stepB6
+    stepB6("`Quando si arriva qui vuol dire che si dovrebbe essere al sicuro da imprevisti a breve, medio e lungo termine e si può pensare agli investimenti`")
+    stepB3-->stepB6
     end
 
-    subgraph C[2- Investimenti a breve termine/liquidi]
+    subgraph C[2- Breve termine/liquidi]
     direction TB
-    stepC1("`Questi investimenti sono utili quando hai bisogno di utilizzare il capitale nel giro di pochi mesi/1 anno, e non è quindi consigliabile investire in strumenti che hanno un orizzonte temporale lungo`")
+    stepC1("`Questi investimenti sono utili quando si ha bisogno di utilizzare il capitale nel giro di pochi mesi/1 anno, e non è quindi consigliabile investire in strumenti che hanno un orizzonte temporale più lungo`")
     -->
-    stepC2("`Nel caso in cui tu NON abbia ancora una data certa in cui ti sarà necessario utilizzare il capitale, considera un conto deposito vincolato, ma che sia **svincolabile** in qualunque momento e senza penali. Oppure un ETF monetario`")
+    stepC2("`Nel caso in cui **NON** si abbia ancora una data certa prevista per l'utilizzo del capitale, si possono considerare conti depositi che sia **svincolabili** in qualunque momento e senza penali. Oppure un ETF monetario (come XEON o C3M, etc).`")
     -->
-    stepC3("`Nel caso in cui tu conosca già la data in cui avrai bisogno di usare il capitale, considera una scala di Buoni Ordinari del Tesoro - i BOT - in base alle scadenze ed agli importi previsti`")
+    stepC3("`Nel caso in cui si conosca già in linea di massima la data in cui si avrà bisogno di usare il capitale, si possono considerare i Buoni Ordinari del Tesoro - i BOT - in base alle scadenze ed agli importi previsti o i BTP (e in generale bond di Paesi white-list) con scadenza 0-12 mesi`")
     end
 
-    subgraph D[3 - Investimenti a medio termine]
+    subgraph D[3 - Medio termine]
     direction TB
-    stepD1("`Quando hai un orizzonte temporale di 2/5 anni per una spesa puoi valutare strumenti a basso rischio con scadenza che cada nel tua orizzonte temporale`")
+    stepD1("`Quando si ha un orizzonte temporale di <10 anni per una spesa, si possono valutare strumenti a basso rischio con scadenza che cada nell'orizzonte temporale. Questo permette di avere un rendimento più alto ma allo stesso tempo avere la ragionevole certezza che si avrà a disposizione ALMENO il capitale iniziale alla fine.`")
     -->
-    stepD2("`In base alla tua propensione al rischio, valuta conti deposito vincolati e/o titoli di stato della durata idonea`")
+    stepD2("`In base alla propria propensione al rischio, si possono valutare conti deposito vincolati e/o titoli di stato, menzionati nello step precedente, della durata pari all'orizzonte temporale.`")
+    -->
+    stepD3("`Per importi rilevanti o in generale per avere minori rischi possibile, si possono valutare alternative come scalette di bond o ETF a scadenza di bond nazionali.`")
+    -->
+    |Opzionale| optD4("`Se l'orizzonte temporale è abbastanza lungo (>5 anni), si possono valutare anche portafogli con più asset, che introducono un rischio più alto ma allo stesso tempo storicamente si sono dimostrati indicati (golden butterfly portfolio, all weather portfolio). `")
     end
 
-    subgraph E[4 - Investimenti a lungo termine]
+    subgraph E[4 - Lungo termine]
     direction TB
-    stepE1("`Quando arrivi a questo punto e hai ancora capitale da investire, puoi valutare strumenti più a lungo termine.`")
+    stepE1("`Quando si arriva a questo punto e si ha ancora capitale da investire, si possono valutare strumenti più a lungo termine.`")
     -->
-    stepEd("`In un'orizzonte temporale > 10 anni, in base alla tua propensione al rischio, puoi scegliere di investire in ETF azionari ed in ulteriori obbligazioni a scadenza più lunga`")
+    |Opzionale| optE2("`Valutare se convenga effettuare versamenti al fondo pensione fino a raggiungere il massimo deducibile`")
+    -->
+    stepE3("`In un'orizzonte temporale > 10 anni, in base alla propria propensione al rischio, si può scegliere di investire in ETF azionari ed in ulteriori obbligazioni a scadenza più lunga.`")
+    -->
+    stepE4("`Si suggerisce di prendere in considerazione ETF mondiali, che replicano l’andamento di indici di mercato diversificati a livello globale.`")
+    -->
+    stepE5("`Il miglior suggerimento è però di, una volta definito un piano coerente, seguirlo per anni, lasciarsi prendere dalla noia e non cambiare continuamente idea, aprendo il broker il meno possibile. **In bocca al lupo**`")
+    stepE1-->stepE3
     end    
 
     A-->B
