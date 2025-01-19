@@ -4,7 +4,7 @@
 
 Wiki open source del progetto Italia Personal Finance.
 
-Di seguito le istruzioni per aggiungere o modificare un contenuto anche se non avvezzi a Github.
+Di seguito le istruzioni per aggiungere o modificare un contenuto anche se non avvezzi a GitHub.
 
 In caso di problemi aprite una "issue" dal menu apposito e cercheremo di aiutarvi.
 
@@ -26,7 +26,7 @@ In caso di problemi aprite una "issue" dal menu apposito e cercheremo di aiutarv
 
 ## 🔨 Vuoi contribuire scrivendo o modificando un articolo?
 
-Puoi farlo direttamente anche da Github, tutti gli articoli sono nella cartella `src/content/blog` e sono in markdown,
+Puoi farlo direttamente anche da GitHub, tutti gli articoli sono nella cartella `src/content/blog` e sono in markdown,
 la stessa sintassi usata su Reddit (`.md` e `.mdx`).
 
 ![Tutorial video](https://github.com/emish89/italiapersonalfinance/blob/main/readme/pr-gif.gif)
@@ -65,7 +65,7 @@ Attendi che uno dei maintainer approvi la richiesta e a quel punto il tuo conten
 
 ## 🍼 Vuoi contribuire in modo più semplice?
 
-Se non hai familiarità con Github e vuoi contribuire alla wiki oppure se esiste già un post su Reddit e vuoi segnalarlo per farlo aggiungere,
+Se non hai familiarità con GitHub e vuoi contribuire alla wiki oppure se esiste già un post su Reddit e vuoi segnalarlo per farlo aggiungere,
 puoi utilizzare questi 2 semplicissimi metodi:
 
 - [Clicca qui per aggiungere un articolo](https://github.com/emish89/italiapersonalfinance/issues/new?assignees=emish89&labels=article&projects=&template=new_article.md&title=)
@@ -163,7 +163,7 @@ While we strive to provide accurate and up-to-date information, this wiki makes 
 Investment Risks:
 Investing in financial markets involves risk, and past performance is not indicative of future results. The value of investments may fluctuate, and investors may lose their entire investment. The wiki is not responsible for any financial loss or damage that may arise from your use of the information provided.
 
-If you have any questions about this disclaimer or the information on this wiki, please contact us through Github.
+If you have any questions about this disclaimer or the information on this wiki, please contact us through GitHub.
 
 
 ![Alt](https://repobeats.axiom.co/api/embed/5d01a4e83f2626e1beb0b9d7c0331daf224e13b0.svg "Repobeats analytics image")
