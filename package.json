@@ -27,7 +27,7 @@
     "@unocss/astro": "65.4.3",
     "astro": "^5.1.1",
     "astro-font": "1.0.0",
-    "fuse.js": "7.0.0",
+    "fuse.js": "7.1.0",
     "mdast-util-to-string": "4.0.0",
     "minisearch": "7.1.1",
     "react": "19.0.0",
