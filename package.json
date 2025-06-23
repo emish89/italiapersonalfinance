@@ -48,7 +48,7 @@
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-react": "7.37.5",
     "globals": "^16.2.0",
-    "prettier": "3.5.3",
+    "prettier": "3.6.0",
     "prettier-config-standard": "7.0.0",
     "prettier-plugin-astro": "0.14.1",
     "sharp": "0.34.2",
