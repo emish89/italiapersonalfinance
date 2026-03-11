@@ -1,0 +1,165 @@
+---
+import Layout from '@layouts/Default.astro';
+import { Card } from '@eliancodes/brutal-ui';
+
+const promptText = `Sei l'assistente ufficiale di Italia Personal Finance. 
+Il file allegato è la Knowledge Base della community.
+Rispondi alle mie domande usando ESCLUSIVAMENTE le informazioni di questo file. 
+Se la risposta non è presente nel testo, dillo onestamente e non inventare nulla. 
+Usa un tono chiaro, professionale ma amichevole, in pieno stile IPF.`;
+
+// Pre-encoded prompt for ChatGPT
+const chatGptLink = `https://chatgpt.com/?q=${encodeURIComponent(promptText)}`;
+---
+
+<Layout
+  title="Chiedi all'IA"
+  pageTitle="Italia Personal Finance | Chiedi all'IA"
+  description="Trasforma la tua IA preferita nell'esperto definitivo di IPF. Scarica la Knowledge Base della nostra Wiki e ottieni risposte personalizzate."
+>
+  <main class='bg-pink-100 p-6 min-h-screen font-poppins'>
+    <section id='chat-intro' class='max-w-6xl mx-auto'>
+      
+      <!-- Disclaimer Banner -->
+      <div class='mb-6'>
+        <div class='bg-red-500 text-white p-4 border-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]'>
+          <h2 class='dm-serif text-2xl mb-2'>Avvertenza Importante</h2>
+          <p class='poppins text-sm md:text-base leading-relaxed'>
+            L'Intelligenza Artificiale puo' soffrire di "allucinazioni" e fornire consigli finanziari errati, inventati o fuorvianti. 
+            Le IA non sostituiscono in alcun modo un consulente finanziario. <strong>Leggere e studiare la Wiki in prima persona sara' sempre l'approccio migliore e piu' sicuro.</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <Card color='#facc15' padded={true}>
+        <div class='flex flex-col gap-6 md:p-6'>
+          <h1 class='dm-serif text-5xl md:text-7xl tracking-tight leading-tight'>
+            Chiedi all'IA
+          </h1>
+          <p class='outfit text-xl md:text-2xl leading-relaxed text-zinc-900'>
+            Abbiamo trasformato l'intera Wiki di Italia Personal Finance in un vero e proprio <strong>"cervello digitale"</strong>. 
+            Scarica la nostra <i>Knowledge Base</i> aggiornata e caricala nel tuo strumento preferito.
+          </p>
+        </div>
+      </Card>
+
+      <div class='grid lg:grid-cols-3 gap-8 mt-12'>
+        
+        <!-- Step 1: Download -->
+        <Card color='#818cf8' padded={true}>
+          <div class='flex flex-col h-full'>
+            <div class='mb-6'>
+              <span class='inline-block bg-black text-white px-3 py-1 font-bold outfit text-xl rounded-sm mb-4 border-2 border-black'>Step 1</span>
+              <h3 class='dm-serif text-3xl mb-3'>Scarica i Dati</h3>
+              <p class='poppins text-md text-zinc-900 leading-relaxed'>
+                Ottieni l'archivio testuale che contiene tutta la Wiki. E' un unico file (.md) ottimizzato per i Large Language Models.
+              </p>
+            </div>
+            <div class='mt-auto pt-4'>
+              <a href='/ipf-wiki-knowledge-base.md' target='_blank' class='brutal-btn bg-white px-6 py-4 border-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all outfit text-xl font-bold w-full text-center block'>
+                Download Base
+              </a>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Step 2: Choose AI -->
+        <Card color='#4ade80' padded={true}>
+          <div class='flex flex-col h-full'>
+            <div class='mb-6'>
+              <span class='inline-block bg-black text-white px-3 py-1 font-bold outfit text-xl rounded-sm mb-4 border-2 border-black'>Step 2</span>
+              <h3 class='dm-serif text-3xl mb-3'>Scegli l'IA</h3>
+              <p class='poppins text-md text-zinc-900 leading-relaxed'>
+                Apri uno strumento e allega il file.
+              </p>
+            </div>
+            <div class='mt-auto flex flex-col gap-3 pt-4'>
+              <a href={chatGptLink} target='_blank' class='bg-white px-4 py-3 border-3 border-black font-bold poppins transition-all flex items-center justify-between shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] block'>
+                ChatGPT
+              </a>
+              <a href='https://gemini.google.com/' target='_blank' class='bg-white px-4 py-3 border-3 border-black font-bold poppins transition-all flex items-center justify-between shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] block'>
+                Gemini
+              </a>
+              <a href='https://claude.ai/' target='_blank' class='bg-white px-4 py-3 border-3 border-black font-bold poppins transition-all flex items-center justify-between shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] block'>
+                Claude
+              </a>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Step 3: Prompt -->
+        <Card color='#fb923c' padded={true}>
+          <div class='flex flex-col h-full'>
+            <div class='mb-4'>
+              <span class='inline-block bg-black text-white px-3 py-1 font-bold outfit text-xl rounded-sm mb-4 border-2 border-black'>Step 3</span>
+              <h3 class='dm-serif text-3xl mb-1'>Copia il Prompt</h3>
+              <p class='poppins text-sm text-zinc-900 leading-relaxed mb-3'>
+                Copia questo messaggio e allegaci il file che hai appena scaricato per impostare correttamente l'assistente.
+              </p>
+            </div>
+            <div class='mt-auto pt-2'>
+              <div 
+                id='copy-prompt-area'
+                class='cursor-pointer group relative bg-orange-50 border-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] p-4 transition-all'
+                data-prompt={promptText}
+                title="Clicca per copiare"
+              >
+                <div class='pr-10'>
+                  <pre class='whitespace-pre-wrap poppins text-xs leading-relaxed text-zinc-800 font-medium'>{promptText}</pre>
+                </div>
+                
+                <div class='absolute top-4 right-4 bg-black text-white text-[10px] px-2 py-1 font-bold uppercase'>
+                  Copia
+                </div>
+
+                <!-- Feedback Overlay -->
+                <div id='copy-feedback' class='absolute inset-0 bg-white flex flex-col items-center justify-center border-l-4 border-green-500 opacity-0 pointer-events-none transition-opacity duration-200 z-10'>
+                   <span class='text-green-600 font-bold dm-serif text-3xl mb-2'>Copiato</span>
+                   <span class='poppins text-xs text-zinc-500'>Pronto da incollare</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+       <div class='mt-12 text-center'>
+         <a href='/' class='inline-block brutal-btn bg-white px-8 py-4 border-3 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[6px] hover:translate-y-[6px] transition-all outfit text-xl font-bold'>
+          Torna alla Wiki
+        </a>
+      </div>
+
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 20px;
+  }
+</style>
+
+<script>
+  const copyArea = document.getElementById('copy-prompt-area');
+  const feedback = document.getElementById('copy-feedback');
+  
+  copyArea?.addEventListener('click', () => {
+    const text = copyArea.getAttribute('data-prompt') || '';
+    navigator.clipboard.writeText(text).then(() => {
+      if (feedback) {
+        feedback.style.opacity = '1';
+        setTimeout(() => {
+          feedback.style.opacity = '0';
+        }, 1200);
+      }
+    });
+  });
+</script>
