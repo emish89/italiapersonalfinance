@@ -1,6 +1,6 @@
 ---
+import { ClientRouter } from 'astro:transitions';
 import LocalFont from '../generic/LocalFont.astro';
-import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
   title: string;
@@ -55,7 +55,7 @@ const { title, description, ogImage, publishedTime, modifiedTime } =
 
   <title>Italia Personal Finance | {title}</title>
 
-  <ViewTransitions />
+  <ClientRouter />
 
   <slot />
 </head>

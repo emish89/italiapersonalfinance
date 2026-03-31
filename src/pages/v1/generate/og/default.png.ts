@@ -25,7 +25,7 @@ export const GET: APIRoute = async () => {
         </div>
         <div style="display: flex; justify-content: space-between; align-items: baseline; padding-top: -2rem;">
           <p style="font-size: 32px">${link}</p>
-          <img src="https://www.italiapersonalfinance.it/ipf.jpg" width="200px" height="200px" style="border: 3px solid black; border-radius: 0.5rem;" />
+          <img src="https://www.italiapersonalfinance.it/ipf.jpg" style="width: 200px; height: 200px; border: 3px solid black; border-radius: 0.5rem;" />
         </div>
       </div>
     </div>
@@ -54,8 +54,9 @@ export const GET: APIRoute = async () => {
   const resvg = new Resvg(svg, opts);
   const pngData = resvg.render();
   const pngBuffer = pngData.asPng();
+  const pngBytes = Uint8Array.from(pngBuffer);
 
-  return new Response(pngBuffer, {
+  return new Response(pngBytes, {
     headers: {
       'content-type': 'image/png',
     },

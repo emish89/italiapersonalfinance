@@ -32,7 +32,7 @@ export const GET = async ({ props }: any) => {
             <p style="font-size: 48px;">IPF</p>
             <p style="font-size: 38px;">${title}</p>
           </div>
-          <img src="https://www.italiapersonalfinance.it/ipf.jpg" width="200px" height="200px" style="border: 3px solid black; border-radius: 0.5rem;" />
+          <img src="https://www.italiapersonalfinance.it/ipf.jpg" style="width: 200px; height: 200px; border: 3px solid black; border-radius: 0.5rem;" />
         </div>
         <div style="display: flex;">
           <p style="font-size: 24px;">${description}</p>
@@ -63,8 +63,9 @@ export const GET = async ({ props }: any) => {
   const resvg = new Resvg(svg, opts);
   const pngData = resvg.render();
   const pngBuffer = pngData.asPng();
+  const pngBytes = Uint8Array.from(pngBuffer);
 
-  return new Response(pngBuffer, {
+  return new Response(pngBytes, {
     headers: {
       'content-type': 'image/png',
     },
