@@ -31,8 +31,8 @@
     "fuse.js": "7.3.0",
     "mdast-util-to-string": "4.0.0",
     "minisearch": "7.2.0",
-    "react": "19.2.5",
-    "react-dom": "19.2.5",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
     "reading-time": "1.5.0",
     "satori": "0.26.0",
     "satori-html": "0.3.2"
