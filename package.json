@@ -52,7 +52,7 @@
     "prettier": "3.9.3",
     "prettier-config-standard": "7.0.0",
     "prettier-plugin-astro": "0.14.1",
-    "sharp": "0.35.2",
+    "sharp": "0.35.3",
     "unocss": "66.4.2"
   }
 }
