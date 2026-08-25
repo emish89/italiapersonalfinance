@@ -27,7 +27,7 @@
     "@types/react-dom": "19.2.5",
     "@unocss/astro": "66.4.2",
     "astro": "^6.1.5",
-    "astro-font": "1.1.0",
+    "astro-font": "1.2.0",
     "fuse.js": "7.5.0",
     "mdast-util-to-string": "4.0.0",
     "minisearch": "7.2.0",
