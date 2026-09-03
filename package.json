@@ -24,7 +24,7 @@
     "@astrojs/sitemap": "3.7.4",
     "@eliancodes/brutal-ui": "1.0.0",
     "@types/react": "19.2.18",
-    "@types/react-dom": "19.2.5",
+    "@types/react-dom": "19.2.7",
     "@unocss/astro": "66.4.2",
     "astro": "^6.1.5",
     "astro-font": "1.2.0",
