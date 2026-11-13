@@ -18,10 +18,10 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^6.0.0",
-    "@astrojs/partytown": "2.1.7",
+    "@astrojs/partytown": "2.1.9",
     "@astrojs/react": "^5.0.3",
     "@astrojs/rss": "4.0.19",
-    "@astrojs/sitemap": "3.7.4",
+    "@astrojs/sitemap": "3.7.5",
     "@eliancodes/brutal-ui": "1.0.0",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
